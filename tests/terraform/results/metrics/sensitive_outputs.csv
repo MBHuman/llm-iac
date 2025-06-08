@@ -3,7 +3,7 @@
 # Generated on: c:\Users\zenka\Documents\github\llm-iac\sensitive_outputs.csv
 
 category,project_name,model_name,metric,precision,recall,f1,jaccard
-security_risks,sensitive_outputs,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.0000,0.0000,0.0000,0.0000
-security_risks,sensitive_outputs,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0000,0.0000,0.0000,0.0000
-security_risks,sensitive_outputs,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.0000,0.0000,0.0000,0.0833
+security_risks,sensitive_outputs,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.5000,0.0588,0.1053,0.0556
+security_risks,sensitive_outputs,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0640,0.0307,0.0354,0.0238
+security_risks,sensitive_outputs,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.2778,0.0889,0.1250,0.1611
 security_risks,sensitive_outputs,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0833,0.0833,0.0833,0.0833

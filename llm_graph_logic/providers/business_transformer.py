@@ -1,11 +1,11 @@
 
 import json
 from pathlib import Path
-from typing import Any, List, Optional
+from typing import Any
 
 import numpy as np
-from pydantic import BaseModel, Field, RootModel
 import torch
+from pydantic import BaseModel, Field, RootModel
 from sentence_transformers import SentenceTransformer, util
 
 from llm_graph_logic.internal.enum import EdgeType, InfoType, NodeType
@@ -18,9 +18,9 @@ class BusinessRequirement(BaseModel):
     Структура описания одного бизнес-требования
     """
     description: str = Field(..., description="Текстовое описание требования")
-    keywords: List[str] = Field(..., description="Ключевые слова, связанные с требованием")
+    keywords: list[str] = Field(..., description="Ключевые слова, связанные с требованием")
     language: str = Field(..., description="Язык требования, например: 'en', 'ru'")
-    useCase: Optional[str] = Field(..., description="Пример использования или мотивирующий кейс")
+    useCase: str | None = Field(..., description="Пример использования или мотивирующий кейс")
 
 
 class BusinessRequirements(RootModel[dict[str, BusinessRequirement]]):

@@ -21,7 +21,6 @@ resource "aws_db_instance" "main_db" {
   identifier           = "main-production-db"  # ❌ Hardcoded identifier
 }
 
-# Outputs showing sensitive data
 output "db_endpoint" {
   value = aws_db_instance.main_db.endpoint
 }

@@ -26,23 +26,89 @@ async def test_basic(make_project_processor):
     comparator.addPlace(
         Place(
             spanText="""
-resource "aws_s3_bucket_lifecycle_configuration" "cleanup" {
-  bucket = aws_s3_bucket.app_data.id
-
-  rule {
-    id     = "expire-logs"
-    status = "Enabled"
-
-    expiration {
-      # ← здесь бизнес-логика перепутана:
-      # для production должно быть 30 дней, а не 7
-      days = var.environment == "production" ? 7 : 30
-    }
+terraform {
+  backend "s3" {
+    bucket = "terraform-state-no-locking"
+    key    = "global/s3/terraform.tfstate"
+    region = "us-east-1"
+    
+    # Critical missing elements:
+    # - No dynamodb_table for state locking
+    # - No access controls specified
   }
 }
             """,
             requirementsKeys=[
-                "REQ_22",
+                "REQ_STATE_LOCKING",
+                "REQ_PUBLICLY_ACCESSIBLE_STORAGE"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+provider "aws" {
+  region = "us-east-1"
+}
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_VALUES",
+                "REQ_UNPINNED_VERSIONS"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_s3_bucket" "state_bucket" {
+  bucket = "terraform-state-no-locking"
+}
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_VALUES",
+                "REQ_13",
+                "REQ_PUBLICLY_ACCESSIBLE_STORAGE"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_s3_bucket" "data_bucket" {
+  bucket = "company-app-data-2023"
+}
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_VALUES",
+                "REQ_13",
+                "REQ_PUBLICLY_ACCESSIBLE_STORAGE"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_db_instance" "app_database" {
+  allocated_storage = 10
+  engine            = "postgres"
+  instance_class    = "db.t3.micro"
+  username          = "admin"
+  password          = "insecurepassword"  # For demonstration only
+}
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_VALUES",
+                "REQ_HARDCODED_SECRETS",
+                "REQ_13",
+                "REQ_24"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_ecs_cluster" "main" {
+  name = "production-cluster"
+}
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_VALUES",
+                "REQ_13",
             ],
         )
     )

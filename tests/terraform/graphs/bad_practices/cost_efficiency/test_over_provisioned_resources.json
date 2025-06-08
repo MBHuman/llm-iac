@@ -109,6 +109,546 @@
       }
     },
     {
+      "id": "info_block.terraform.aws.aws_instance",
+      "label": "info_block.terraform.aws.aws_instance",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_instance.overkill_web_server.ami",
+      "label": "info_attribute.terraform.aws_instance.overkill_web_server.ami",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.arn",
+      "label": "aws_instance.overkill_web_server.arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.associate_public_ip_address",
+      "label": "aws_instance.overkill_web_server.associate_public_ip_address",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.availability_zone",
+      "label": "aws_instance.overkill_web_server.availability_zone",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.cpu_core_count",
+      "label": "aws_instance.overkill_web_server.cpu_core_count",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.cpu_threads_per_core",
+      "label": "aws_instance.overkill_web_server.cpu_threads_per_core",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.disable_api_stop",
+      "label": "aws_instance.overkill_web_server.disable_api_stop",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.disable_api_termination",
+      "label": "aws_instance.overkill_web_server.disable_api_termination",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.ebs_optimized",
+      "label": "aws_instance.overkill_web_server.ebs_optimized",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.enable_primary_ipv6",
+      "label": "aws_instance.overkill_web_server.enable_primary_ipv6",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.get_password_data",
+      "label": "aws_instance.overkill_web_server.get_password_data",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.hibernation",
+      "label": "aws_instance.overkill_web_server.hibernation",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.host_id",
+      "label": "aws_instance.overkill_web_server.host_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.host_resource_group_arn",
+      "label": "aws_instance.overkill_web_server.host_resource_group_arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.iam_instance_profile",
+      "label": "aws_instance.overkill_web_server.iam_instance_profile",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.id",
+      "label": "aws_instance.overkill_web_server.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.instance_initiated_shutdown_behavior",
+      "label": "aws_instance.overkill_web_server.instance_initiated_shutdown_behavior",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.instance_lifecycle",
+      "label": "aws_instance.overkill_web_server.instance_lifecycle",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.instance_state",
+      "label": "aws_instance.overkill_web_server.instance_state",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_instance.overkill_web_server.instance_type",
+      "label": "info_attribute.terraform.aws_instance.overkill_web_server.instance_type",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.ipv6_address_count",
+      "label": "aws_instance.overkill_web_server.ipv6_address_count",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.ipv6_addresses",
+      "label": "aws_instance.overkill_web_server.ipv6_addresses",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.key_name",
+      "label": "aws_instance.overkill_web_server.key_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.monitoring",
+      "label": "aws_instance.overkill_web_server.monitoring",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.outpost_arn",
+      "label": "aws_instance.overkill_web_server.outpost_arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.password_data",
+      "label": "aws_instance.overkill_web_server.password_data",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.placement_group",
+      "label": "aws_instance.overkill_web_server.placement_group",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.placement_partition_number",
+      "label": "aws_instance.overkill_web_server.placement_partition_number",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.primary_network_interface_id",
+      "label": "aws_instance.overkill_web_server.primary_network_interface_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.private_dns",
+      "label": "aws_instance.overkill_web_server.private_dns",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.private_ip",
+      "label": "aws_instance.overkill_web_server.private_ip",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.public_dns",
+      "label": "aws_instance.overkill_web_server.public_dns",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.public_ip",
+      "label": "aws_instance.overkill_web_server.public_ip",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.secondary_private_ips",
+      "label": "aws_instance.overkill_web_server.secondary_private_ips",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.security_groups",
+      "label": "aws_instance.overkill_web_server.security_groups",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.source_dest_check",
+      "label": "aws_instance.overkill_web_server.source_dest_check",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.spot_instance_request_id",
+      "label": "aws_instance.overkill_web_server.spot_instance_request_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.subnet_id",
+      "label": "aws_instance.overkill_web_server.subnet_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_instance.overkill_web_server.tags",
+      "label": "info_attribute.terraform.aws_instance.overkill_web_server.tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.tags_all",
+      "label": "aws_instance.overkill_web_server.tags_all",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.tenancy",
+      "label": "aws_instance.overkill_web_server.tenancy",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_instance.overkill_web_server.user_data",
+      "label": "info_attribute.terraform.aws_instance.overkill_web_server.user_data",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.user_data_base64",
+      "label": "aws_instance.overkill_web_server.user_data_base64",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.user_data_replace_on_change",
+      "label": "aws_instance.overkill_web_server.user_data_replace_on_change",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.overkill_web_server.volume_tags",
+      "label": "aws_instance.overkill_web_server.volume_tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_instance.overkill_web_server.vpc_security_group_ids",
+      "label": "info_attribute.terraform.aws_instance.overkill_web_server.vpc_security_group_ids",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_block.terraform.aws.aws_security_group",
+      "label": "info_block.terraform.aws.aws_security_group",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.web.arn",
+      "label": "aws_security_group.web.arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_security_group.web.description",
+      "label": "info_attribute.terraform.aws_security_group.web.description",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.web.egress",
+      "label": "aws_security_group.web.egress",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.web.id",
+      "label": "aws_security_group.web.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_security_group.web.ingress",
+      "label": "info_attribute.terraform.aws_security_group.web.ingress",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_security_group.web.name",
+      "label": "info_attribute.terraform.aws_security_group.web.name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.web.name_prefix",
+      "label": "aws_security_group.web.name_prefix",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.web.owner_id",
+      "label": "aws_security_group.web.owner_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.web.revoke_rules_on_delete",
+      "label": "aws_security_group.web.revoke_rules_on_delete",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.web.tags",
+      "label": "aws_security_group.web.tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.web.tags_all",
+      "label": "aws_security_group.web.tags_all",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.web.vpc_id",
+      "label": "aws_security_group.web.vpc_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
       "id": "info_business.REQ_11",
       "label": "info_business.REQ_11",
       "shape": "ellipse",
@@ -282,6 +822,278 @@
       "to": "aws_security_group.web"
     },
     {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "info_attribute.terraform.aws_instance.overkill_web_server.ami"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.associate_public_ip_address"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.availability_zone"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.cpu_core_count"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.cpu_threads_per_core"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.disable_api_stop"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.disable_api_termination"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.ebs_optimized"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.enable_primary_ipv6"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.get_password_data"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.hibernation"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.host_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.host_resource_group_arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.iam_instance_profile"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.instance_initiated_shutdown_behavior"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.instance_lifecycle"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.instance_state"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "info_attribute.terraform.aws_instance.overkill_web_server.instance_type"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.ipv6_address_count"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.ipv6_addresses"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.key_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.monitoring"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.outpost_arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.password_data"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.placement_group"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.placement_partition_number"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.primary_network_interface_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.private_dns"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.private_ip"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.public_dns"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.public_ip"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.secondary_private_ips"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.security_groups"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.source_dest_check"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.spot_instance_request_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.subnet_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "info_attribute.terraform.aws_instance.overkill_web_server.tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.tags_all"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.tenancy"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "info_attribute.terraform.aws_instance.overkill_web_server.user_data"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.user_data_base64"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.user_data_replace_on_change"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.overkill_web_server.volume_tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "info_attribute.terraform.aws_instance.overkill_web_server.vpc_security_group_ids"
+    },
+    {
+      "from": "info_attribute.terraform.aws_instance.overkill_web_server.ami",
+      "to": "aws_instance.overkill_web_server.ami"
+    },
+    {
+      "from": "info_attribute.terraform.aws_instance.overkill_web_server.instance_type",
+      "to": "aws_instance.overkill_web_server.instance_type"
+    },
+    {
+      "from": "info_attribute.terraform.aws_instance.overkill_web_server.tags",
+      "to": "aws_instance.overkill_web_server.tags"
+    },
+    {
+      "from": "info_attribute.terraform.aws_instance.overkill_web_server.user_data",
+      "to": "aws_instance.overkill_web_server.user_data"
+    },
+    {
+      "from": "info_attribute.terraform.aws_instance.overkill_web_server.vpc_security_group_ids",
+      "to": "aws_instance.overkill_web_server.vpc_security_group_ids"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.web"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.web.arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "info_attribute.terraform.aws_security_group.web.description"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.web.egress"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.web.id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "info_attribute.terraform.aws_security_group.web.ingress"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "info_attribute.terraform.aws_security_group.web.name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.web.name_prefix"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.web.owner_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.web.revoke_rules_on_delete"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.web.tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.web.tags_all"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.web.vpc_id"
+    },
+    {
+      "from": "info_attribute.terraform.aws_security_group.web.description",
+      "to": "aws_security_group.web.description"
+    },
+    {
+      "from": "info_attribute.terraform.aws_security_group.web.ingress",
+      "to": "aws_security_group.web.ingress"
+    },
+    {
+      "from": "info_attribute.terraform.aws_security_group.web.name",
+      "to": "aws_security_group.web.name"
+    },
+    {
       "from": "info_business.REQ_11",
       "to": "aws"
     },
@@ -364,6 +1176,10 @@
     {
       "from": "info_business.REQ_08",
       "to": "aws_security_group.web"
+    },
+    {
+      "from": "aws_security_group.web.id",
+      "to": "aws_instance.overkill_web_server.vpc_security_group_ids"
     }
   ]
 }

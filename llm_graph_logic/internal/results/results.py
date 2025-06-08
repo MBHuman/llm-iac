@@ -1,8 +1,7 @@
 import json
 from pathlib import Path
-from typing import List
 
-from llm_graph_logic.internal.enum import NodeMetaType, NodeType
+from llm_graph_logic.internal.enum import NodeType
 from llm_graph_logic.internal.graph import Node
 from llm_graph_logic.internal.integrations.llm.proxy import PromptNode
 
@@ -40,7 +39,7 @@ class Results:
         nodeID = node.getID()
         return self.resultsMap.get(nodeID)
     
-    def getResults(self) -> List[Result]:
+    def getResults(self) -> list[Result]:
         return self.results
 
     def saveResults(self, path: Path) -> None:

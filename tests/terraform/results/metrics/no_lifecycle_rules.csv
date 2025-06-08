@@ -3,7 +3,7 @@
 # Generated on: c:\Users\zenka\Documents\github\llm-iac\no_lifecycle_rules.csv
 
 category,project_name,model_name,metric,precision,recall,f1,jaccard
-reliability_n_stability,no_lifecycle_rules,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.0000,0.0000,0.0000,0.0000
-reliability_n_stability,no_lifecycle_rules,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0000,0.0000,0.0000,0.0000
-reliability_n_stability,no_lifecycle_rules,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.0000,0.0000,0.0000,0.2500
-reliability_n_stability,no_lifecycle_rules,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.2500,0.2500,0.2500,0.2500
+reliability_n_stability,no_lifecycle_rules,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.2381,0.2083,0.2222,0.1250
+reliability_n_stability,no_lifecycle_rules,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0611,0.1587,0.0778,0.0492
+reliability_n_stability,no_lifecycle_rules,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.2917,0.1917,0.1667,0.1083
+reliability_n_stability,no_lifecycle_rules,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0000,0.0000,0.0000,0.0000

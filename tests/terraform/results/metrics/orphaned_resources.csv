@@ -3,7 +3,7 @@
 # Generated on: c:\Users\zenka\Documents\github\llm-iac\orphaned_resources.csv
 
 category,project_name,model_name,metric,precision,recall,f1,jaccard
-cost_efficiency,orphaned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.0000,0.0000,0.0000,0.0000
-cost_efficiency,orphaned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0000,0.0000,0.0000,0.0000
-cost_efficiency,orphaned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.0000,0.0000,0.0000,0.0000
-cost_efficiency,orphaned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0000,0.0000,0.0000,0.0000
+cost_efficiency,orphaned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.4000,0.0800,0.1333,0.0714
+cost_efficiency,orphaned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0789,0.0526,0.0614,0.0439
+cost_efficiency,orphaned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.3333,0.2222,0.2500,0.2222
+cost_efficiency,orphaned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.1667,0.1667,0.1667,0.1667

@@ -3,7 +3,7 @@
 # Generated on: c:\Users\zenka\Documents\github\llm-iac\publicly_accessible_storage.csv
 
 category,project_name,model_name,metric,precision,recall,f1,jaccard
-security_risks,publicly_accessible_storage,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.0000,0.0000,0.0000,0.0000
-security_risks,publicly_accessible_storage,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0000,0.0000,0.0000,0.0000
-security_risks,publicly_accessible_storage,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.0000,0.0000,0.0000,0.0000
+security_risks,publicly_accessible_storage,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.4000,0.1034,0.1644,0.0896
+security_risks,publicly_accessible_storage,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0951,0.0694,0.0729,0.0481
+security_risks,publicly_accessible_storage,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.3500,0.1446,0.1867,0.1182
 security_risks,publicly_accessible_storage,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0000,0.0000,0.0000,0.0000

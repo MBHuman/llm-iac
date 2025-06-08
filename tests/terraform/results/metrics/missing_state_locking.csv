@@ -3,7 +3,7 @@
 # Generated on: c:\Users\zenka\Documents\github\llm-iac\missing_state_locking.csv
 
 category,project_name,model_name,metric,precision,recall,f1,jaccard
-reliability_n_stability,missing_state_locking,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.0000,0.0000,0.0000,0.0000
-reliability_n_stability,missing_state_locking,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0000,0.0000,0.0000,0.0000
-reliability_n_stability,missing_state_locking,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.0000,0.0000,0.0000,0.2857
-reliability_n_stability,missing_state_locking,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.2857,0.2857,0.2857,0.2857
+reliability_n_stability,missing_state_locking,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.1765,0.2000,0.1875,0.1034
+reliability_n_stability,missing_state_locking,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0889,0.1000,0.0778,0.0556
+reliability_n_stability,missing_state_locking,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.1190,0.0833,0.0952,0.0571
+reliability_n_stability,missing_state_locking,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0000,0.0000,0.0000,0.0000

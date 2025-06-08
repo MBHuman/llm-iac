@@ -163,6 +163,321 @@
       }
     },
     {
+      "id": "info_block.terraform.aws.aws_ebs_volume",
+      "label": "info_block.terraform.aws.aws_ebs_volume",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_ebs_volume.orphaned_volume.arn",
+      "label": "aws_ebs_volume.orphaned_volume.arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.availability_zone",
+      "label": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.availability_zone",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_ebs_volume.orphaned_volume.create_time",
+      "label": "aws_ebs_volume.orphaned_volume.create_time",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_ebs_volume.orphaned_volume.encrypted",
+      "label": "aws_ebs_volume.orphaned_volume.encrypted",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_ebs_volume.orphaned_volume.final_snapshot",
+      "label": "aws_ebs_volume.orphaned_volume.final_snapshot",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_ebs_volume.orphaned_volume.id",
+      "label": "aws_ebs_volume.orphaned_volume.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_ebs_volume.orphaned_volume.iops",
+      "label": "aws_ebs_volume.orphaned_volume.iops",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_ebs_volume.orphaned_volume.kms_key_id",
+      "label": "aws_ebs_volume.orphaned_volume.kms_key_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_ebs_volume.orphaned_volume.multi_attach_enabled",
+      "label": "aws_ebs_volume.orphaned_volume.multi_attach_enabled",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_ebs_volume.orphaned_volume.outpost_arn",
+      "label": "aws_ebs_volume.orphaned_volume.outpost_arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.size",
+      "label": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.size",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_ebs_volume.orphaned_volume.snapshot_id",
+      "label": "aws_ebs_volume.orphaned_volume.snapshot_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.tags",
+      "label": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_ebs_volume.orphaned_volume.tags_all",
+      "label": "aws_ebs_volume.orphaned_volume.tags_all",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_ebs_volume.orphaned_volume.throughput",
+      "label": "aws_ebs_volume.orphaned_volume.throughput",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.type",
+      "label": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.type",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_block.terraform.aws.aws_security_group",
+      "label": "info_block.terraform.aws.aws_security_group",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.dangling_sg.arn",
+      "label": "aws_security_group.dangling_sg.arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_security_group.dangling_sg.description",
+      "label": "info_attribute.terraform.aws_security_group.dangling_sg.description",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.dangling_sg.egress",
+      "label": "aws_security_group.dangling_sg.egress",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.dangling_sg.id",
+      "label": "aws_security_group.dangling_sg.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_security_group.dangling_sg.ingress",
+      "label": "info_attribute.terraform.aws_security_group.dangling_sg.ingress",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_security_group.dangling_sg.name",
+      "label": "info_attribute.terraform.aws_security_group.dangling_sg.name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.dangling_sg.name_prefix",
+      "label": "aws_security_group.dangling_sg.name_prefix",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.dangling_sg.owner_id",
+      "label": "aws_security_group.dangling_sg.owner_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.dangling_sg.revoke_rules_on_delete",
+      "label": "aws_security_group.dangling_sg.revoke_rules_on_delete",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.dangling_sg.tags",
+      "label": "aws_security_group.dangling_sg.tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.dangling_sg.tags_all",
+      "label": "aws_security_group.dangling_sg.tags_all",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.dangling_sg.vpc_id",
+      "label": "aws_security_group.dangling_sg.vpc_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_block.terraform.null.null_resource",
+      "label": "info_block.terraform.null.null_resource",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "null_resource.manual_resource.id",
+      "label": "null_resource.manual_resource.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "null_resource.manual_resource.triggers",
+      "label": "null_resource.manual_resource.triggers",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "null_resource.tamper_state.id",
+      "label": "null_resource.tamper_state.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.null_resource.tamper_state.triggers",
+      "label": "info_attribute.terraform.null_resource.tamper_state.triggers",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
       "id": "info_business.REQ_11",
       "label": "info_business.REQ_11",
       "shape": "ellipse",
@@ -355,6 +670,182 @@
     {
       "from": "warning.value",
       "to": "warning"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume.arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.availability_zone"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume.create_time"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume.encrypted"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume.final_snapshot"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume.id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume.iops"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume.kms_key_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume.multi_attach_enabled"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume.outpost_arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.size"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume.snapshot_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume.tags_all"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "aws_ebs_volume.orphaned_volume.throughput"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_ebs_volume",
+      "to": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.type"
+    },
+    {
+      "from": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.availability_zone",
+      "to": "aws_ebs_volume.orphaned_volume.availability_zone"
+    },
+    {
+      "from": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.size",
+      "to": "aws_ebs_volume.orphaned_volume.size"
+    },
+    {
+      "from": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.tags",
+      "to": "aws_ebs_volume.orphaned_volume.tags"
+    },
+    {
+      "from": "info_attribute.terraform.aws_ebs_volume.orphaned_volume.type",
+      "to": "aws_ebs_volume.orphaned_volume.type"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.dangling_sg"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.dangling_sg.arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "info_attribute.terraform.aws_security_group.dangling_sg.description"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.dangling_sg.egress"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.dangling_sg.id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "info_attribute.terraform.aws_security_group.dangling_sg.ingress"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "info_attribute.terraform.aws_security_group.dangling_sg.name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.dangling_sg.name_prefix"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.dangling_sg.owner_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.dangling_sg.revoke_rules_on_delete"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.dangling_sg.tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.dangling_sg.tags_all"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.dangling_sg.vpc_id"
+    },
+    {
+      "from": "info_attribute.terraform.aws_security_group.dangling_sg.description",
+      "to": "aws_security_group.dangling_sg.description"
+    },
+    {
+      "from": "info_attribute.terraform.aws_security_group.dangling_sg.ingress",
+      "to": "aws_security_group.dangling_sg.ingress"
+    },
+    {
+      "from": "info_attribute.terraform.aws_security_group.dangling_sg.name",
+      "to": "aws_security_group.dangling_sg.name"
+    },
+    {
+      "from": "info_block.terraform.null.null_resource",
+      "to": "null_resource.manual_resource"
+    },
+    {
+      "from": "info_block.terraform.null.null_resource",
+      "to": "null_resource.manual_resource.id"
+    },
+    {
+      "from": "info_block.terraform.null.null_resource",
+      "to": "null_resource.manual_resource.triggers"
+    },
+    {
+      "from": "info_block.terraform.null.null_resource",
+      "to": "null_resource.tamper_state"
+    },
+    {
+      "from": "info_block.terraform.null.null_resource",
+      "to": "null_resource.tamper_state.id"
+    },
+    {
+      "from": "info_block.terraform.null.null_resource",
+      "to": "info_attribute.terraform.null_resource.tamper_state.triggers"
+    },
+    {
+      "from": "info_attribute.terraform.null_resource.tamper_state.triggers",
+      "to": "null_resource.tamper_state.triggers"
     },
     {
       "from": "info_business.REQ_11",

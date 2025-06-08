@@ -11,6 +11,7 @@ from llm_graph_logic.internal.parser import Parser
 from llm_graph_logic.internal.results import Result, ResultPlotsBuilder, Results
 from llm_graph_logic.internal.sorting import Sorting
 
+
 class PostProjectProcessor:
 
     def __init__(self) -> None:

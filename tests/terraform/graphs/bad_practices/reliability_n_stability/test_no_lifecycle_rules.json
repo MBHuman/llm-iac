@@ -226,6 +226,1599 @@
       }
     },
     {
+      "id": "info_block.terraform.aws.aws_s3_bucket",
+      "label": "info_block.terraform.aws.aws_s3_bucket",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.acceleration_status",
+      "label": "aws_s3_bucket.critical_data.acceleration_status",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.acl",
+      "label": "aws_s3_bucket.critical_data.acl",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.arn",
+      "label": "aws_s3_bucket.critical_data.arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_s3_bucket.critical_data.bucket",
+      "label": "info_attribute.terraform.aws_s3_bucket.critical_data.bucket",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.bucket_domain_name",
+      "label": "aws_s3_bucket.critical_data.bucket_domain_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.bucket_prefix",
+      "label": "aws_s3_bucket.critical_data.bucket_prefix",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.bucket_regional_domain_name",
+      "label": "aws_s3_bucket.critical_data.bucket_regional_domain_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.force_destroy",
+      "label": "aws_s3_bucket.critical_data.force_destroy",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.hosted_zone_id",
+      "label": "aws_s3_bucket.critical_data.hosted_zone_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.id",
+      "label": "aws_s3_bucket.critical_data.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.object_lock_enabled",
+      "label": "aws_s3_bucket.critical_data.object_lock_enabled",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.policy",
+      "label": "aws_s3_bucket.critical_data.policy",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.region",
+      "label": "aws_s3_bucket.critical_data.region",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.request_payer",
+      "label": "aws_s3_bucket.critical_data.request_payer",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.tags",
+      "label": "aws_s3_bucket.critical_data.tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.tags_all",
+      "label": "aws_s3_bucket.critical_data.tags_all",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.website_domain",
+      "label": "aws_s3_bucket.critical_data.website_domain",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.critical_data.website_endpoint",
+      "label": "aws_s3_bucket.critical_data.website_endpoint",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_block.terraform.aws.aws_db_instance",
+      "label": "info_block.terraform.aws.aws_db_instance",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.address",
+      "label": "aws_db_instance.production_db.address",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_db_instance.production_db.allocated_storage",
+      "label": "info_attribute.terraform.aws_db_instance.production_db.allocated_storage",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.allow_major_version_upgrade",
+      "label": "aws_db_instance.production_db.allow_major_version_upgrade",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.apply_immediately",
+      "label": "aws_db_instance.production_db.apply_immediately",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.arn",
+      "label": "aws_db_instance.production_db.arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.auto_minor_version_upgrade",
+      "label": "aws_db_instance.production_db.auto_minor_version_upgrade",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.availability_zone",
+      "label": "aws_db_instance.production_db.availability_zone",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.backup_retention_period",
+      "label": "aws_db_instance.production_db.backup_retention_period",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.backup_target",
+      "label": "aws_db_instance.production_db.backup_target",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.backup_window",
+      "label": "aws_db_instance.production_db.backup_window",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.ca_cert_identifier",
+      "label": "aws_db_instance.production_db.ca_cert_identifier",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.character_set_name",
+      "label": "aws_db_instance.production_db.character_set_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.copy_tags_to_snapshot",
+      "label": "aws_db_instance.production_db.copy_tags_to_snapshot",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.custom_iam_instance_profile",
+      "label": "aws_db_instance.production_db.custom_iam_instance_profile",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.customer_owned_ip_enabled",
+      "label": "aws_db_instance.production_db.customer_owned_ip_enabled",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.database_insights_mode",
+      "label": "aws_db_instance.production_db.database_insights_mode",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.db_name",
+      "label": "aws_db_instance.production_db.db_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.db_subnet_group_name",
+      "label": "aws_db_instance.production_db.db_subnet_group_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.dedicated_log_volume",
+      "label": "aws_db_instance.production_db.dedicated_log_volume",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.delete_automated_backups",
+      "label": "aws_db_instance.production_db.delete_automated_backups",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.deletion_protection",
+      "label": "aws_db_instance.production_db.deletion_protection",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.domain",
+      "label": "aws_db_instance.production_db.domain",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.domain_auth_secret_arn",
+      "label": "aws_db_instance.production_db.domain_auth_secret_arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.domain_dns_ips",
+      "label": "aws_db_instance.production_db.domain_dns_ips",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.domain_fqdn",
+      "label": "aws_db_instance.production_db.domain_fqdn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.domain_iam_role_name",
+      "label": "aws_db_instance.production_db.domain_iam_role_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.domain_ou",
+      "label": "aws_db_instance.production_db.domain_ou",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.enabled_cloudwatch_logs_exports",
+      "label": "aws_db_instance.production_db.enabled_cloudwatch_logs_exports",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.endpoint",
+      "label": "aws_db_instance.production_db.endpoint",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_db_instance.production_db.engine",
+      "label": "info_attribute.terraform.aws_db_instance.production_db.engine",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.engine_lifecycle_support",
+      "label": "aws_db_instance.production_db.engine_lifecycle_support",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.engine_version",
+      "label": "aws_db_instance.production_db.engine_version",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.engine_version_actual",
+      "label": "aws_db_instance.production_db.engine_version_actual",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.final_snapshot_identifier",
+      "label": "aws_db_instance.production_db.final_snapshot_identifier",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.hosted_zone_id",
+      "label": "aws_db_instance.production_db.hosted_zone_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.iam_database_authentication_enabled",
+      "label": "aws_db_instance.production_db.iam_database_authentication_enabled",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.id",
+      "label": "aws_db_instance.production_db.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.identifier",
+      "label": "aws_db_instance.production_db.identifier",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.identifier_prefix",
+      "label": "aws_db_instance.production_db.identifier_prefix",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_db_instance.production_db.instance_class",
+      "label": "info_attribute.terraform.aws_db_instance.production_db.instance_class",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.iops",
+      "label": "aws_db_instance.production_db.iops",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.kms_key_id",
+      "label": "aws_db_instance.production_db.kms_key_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.latest_restorable_time",
+      "label": "aws_db_instance.production_db.latest_restorable_time",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.license_model",
+      "label": "aws_db_instance.production_db.license_model",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.listener_endpoint",
+      "label": "aws_db_instance.production_db.listener_endpoint",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.maintenance_window",
+      "label": "aws_db_instance.production_db.maintenance_window",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.manage_master_user_password",
+      "label": "aws_db_instance.production_db.manage_master_user_password",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.master_user_secret",
+      "label": "aws_db_instance.production_db.master_user_secret",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.master_user_secret_kms_key_id",
+      "label": "aws_db_instance.production_db.master_user_secret_kms_key_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.max_allocated_storage",
+      "label": "aws_db_instance.production_db.max_allocated_storage",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.monitoring_interval",
+      "label": "aws_db_instance.production_db.monitoring_interval",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.monitoring_role_arn",
+      "label": "aws_db_instance.production_db.monitoring_role_arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.multi_az",
+      "label": "aws_db_instance.production_db.multi_az",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.nchar_character_set_name",
+      "label": "aws_db_instance.production_db.nchar_character_set_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.network_type",
+      "label": "aws_db_instance.production_db.network_type",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.option_group_name",
+      "label": "aws_db_instance.production_db.option_group_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.parameter_group_name",
+      "label": "aws_db_instance.production_db.parameter_group_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_db_instance.production_db.password",
+      "label": "info_attribute.terraform.aws_db_instance.production_db.password",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.password_wo",
+      "label": "aws_db_instance.production_db.password_wo",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.password_wo_version",
+      "label": "aws_db_instance.production_db.password_wo_version",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.performance_insights_enabled",
+      "label": "aws_db_instance.production_db.performance_insights_enabled",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.performance_insights_kms_key_id",
+      "label": "aws_db_instance.production_db.performance_insights_kms_key_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.performance_insights_retention_period",
+      "label": "aws_db_instance.production_db.performance_insights_retention_period",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.port",
+      "label": "aws_db_instance.production_db.port",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.publicly_accessible",
+      "label": "aws_db_instance.production_db.publicly_accessible",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.replica_mode",
+      "label": "aws_db_instance.production_db.replica_mode",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.replicas",
+      "label": "aws_db_instance.production_db.replicas",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.replicate_source_db",
+      "label": "aws_db_instance.production_db.replicate_source_db",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.resource_id",
+      "label": "aws_db_instance.production_db.resource_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.skip_final_snapshot",
+      "label": "aws_db_instance.production_db.skip_final_snapshot",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.snapshot_identifier",
+      "label": "aws_db_instance.production_db.snapshot_identifier",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.status",
+      "label": "aws_db_instance.production_db.status",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.storage_encrypted",
+      "label": "aws_db_instance.production_db.storage_encrypted",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.storage_throughput",
+      "label": "aws_db_instance.production_db.storage_throughput",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.storage_type",
+      "label": "aws_db_instance.production_db.storage_type",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.tags",
+      "label": "aws_db_instance.production_db.tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.tags_all",
+      "label": "aws_db_instance.production_db.tags_all",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.timezone",
+      "label": "aws_db_instance.production_db.timezone",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.upgrade_storage_config",
+      "label": "aws_db_instance.production_db.upgrade_storage_config",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_db_instance.production_db.username",
+      "label": "info_attribute.terraform.aws_db_instance.production_db.username",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.production_db.vpc_security_group_ids",
+      "label": "aws_db_instance.production_db.vpc_security_group_ids",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_block.terraform.aws.aws_instance",
+      "label": "info_block.terraform.aws.aws_instance",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_instance.stateful_server.ami",
+      "label": "info_attribute.terraform.aws_instance.stateful_server.ami",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.arn",
+      "label": "aws_instance.stateful_server.arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.associate_public_ip_address",
+      "label": "aws_instance.stateful_server.associate_public_ip_address",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.availability_zone",
+      "label": "aws_instance.stateful_server.availability_zone",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.cpu_core_count",
+      "label": "aws_instance.stateful_server.cpu_core_count",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.cpu_threads_per_core",
+      "label": "aws_instance.stateful_server.cpu_threads_per_core",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.disable_api_stop",
+      "label": "aws_instance.stateful_server.disable_api_stop",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.disable_api_termination",
+      "label": "aws_instance.stateful_server.disable_api_termination",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.ebs_optimized",
+      "label": "aws_instance.stateful_server.ebs_optimized",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.enable_primary_ipv6",
+      "label": "aws_instance.stateful_server.enable_primary_ipv6",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.get_password_data",
+      "label": "aws_instance.stateful_server.get_password_data",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.hibernation",
+      "label": "aws_instance.stateful_server.hibernation",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.host_id",
+      "label": "aws_instance.stateful_server.host_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.host_resource_group_arn",
+      "label": "aws_instance.stateful_server.host_resource_group_arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.iam_instance_profile",
+      "label": "aws_instance.stateful_server.iam_instance_profile",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.id",
+      "label": "aws_instance.stateful_server.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.instance_initiated_shutdown_behavior",
+      "label": "aws_instance.stateful_server.instance_initiated_shutdown_behavior",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.instance_lifecycle",
+      "label": "aws_instance.stateful_server.instance_lifecycle",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.instance_state",
+      "label": "aws_instance.stateful_server.instance_state",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_instance.stateful_server.instance_type",
+      "label": "info_attribute.terraform.aws_instance.stateful_server.instance_type",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.ipv6_address_count",
+      "label": "aws_instance.stateful_server.ipv6_address_count",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.ipv6_addresses",
+      "label": "aws_instance.stateful_server.ipv6_addresses",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.key_name",
+      "label": "aws_instance.stateful_server.key_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.monitoring",
+      "label": "aws_instance.stateful_server.monitoring",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.outpost_arn",
+      "label": "aws_instance.stateful_server.outpost_arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.password_data",
+      "label": "aws_instance.stateful_server.password_data",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.placement_group",
+      "label": "aws_instance.stateful_server.placement_group",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.placement_partition_number",
+      "label": "aws_instance.stateful_server.placement_partition_number",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.primary_network_interface_id",
+      "label": "aws_instance.stateful_server.primary_network_interface_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.private_dns",
+      "label": "aws_instance.stateful_server.private_dns",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.private_ip",
+      "label": "aws_instance.stateful_server.private_ip",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.public_dns",
+      "label": "aws_instance.stateful_server.public_dns",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.public_ip",
+      "label": "aws_instance.stateful_server.public_ip",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.secondary_private_ips",
+      "label": "aws_instance.stateful_server.secondary_private_ips",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.security_groups",
+      "label": "aws_instance.stateful_server.security_groups",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.source_dest_check",
+      "label": "aws_instance.stateful_server.source_dest_check",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.spot_instance_request_id",
+      "label": "aws_instance.stateful_server.spot_instance_request_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.subnet_id",
+      "label": "aws_instance.stateful_server.subnet_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.tags",
+      "label": "aws_instance.stateful_server.tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.tags_all",
+      "label": "aws_instance.stateful_server.tags_all",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.tenancy",
+      "label": "aws_instance.stateful_server.tenancy",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_instance.stateful_server.user_data",
+      "label": "info_attribute.terraform.aws_instance.stateful_server.user_data",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.user_data_base64",
+      "label": "aws_instance.stateful_server.user_data_base64",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.user_data_replace_on_change",
+      "label": "aws_instance.stateful_server.user_data_replace_on_change",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.volume_tags",
+      "label": "aws_instance.stateful_server.volume_tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.stateful_server.vpc_security_group_ids",
+      "label": "aws_instance.stateful_server.vpc_security_group_ids",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_block.terraform.aws.aws_iam_role",
+      "label": "info_block.terraform.aws.aws_iam_role",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.arn",
+      "label": "aws_iam_role.admin_role.arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_iam_role.admin_role.assume_role_policy",
+      "label": "info_attribute.terraform.aws_iam_role.admin_role.assume_role_policy",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.create_date",
+      "label": "aws_iam_role.admin_role.create_date",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.description",
+      "label": "aws_iam_role.admin_role.description",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.force_detach_policies",
+      "label": "aws_iam_role.admin_role.force_detach_policies",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.id",
+      "label": "aws_iam_role.admin_role.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.managed_policy_arns",
+      "label": "aws_iam_role.admin_role.managed_policy_arns",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.max_session_duration",
+      "label": "aws_iam_role.admin_role.max_session_duration",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_iam_role.admin_role.name",
+      "label": "info_attribute.terraform.aws_iam_role.admin_role.name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.name_prefix",
+      "label": "aws_iam_role.admin_role.name_prefix",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.path",
+      "label": "aws_iam_role.admin_role.path",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.permissions_boundary",
+      "label": "aws_iam_role.admin_role.permissions_boundary",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.tags",
+      "label": "aws_iam_role.admin_role.tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.tags_all",
+      "label": "aws_iam_role.admin_role.tags_all",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_iam_role.admin_role.unique_id",
+      "label": "aws_iam_role.admin_role.unique_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_block.terraform.aws.aws_security_group",
+      "label": "info_block.terraform.aws.aws_security_group",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.app_firewall.arn",
+      "label": "aws_security_group.app_firewall.arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_security_group.app_firewall.description",
+      "label": "info_attribute.terraform.aws_security_group.app_firewall.description",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.app_firewall.egress",
+      "label": "aws_security_group.app_firewall.egress",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.app_firewall.id",
+      "label": "aws_security_group.app_firewall.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_security_group.app_firewall.ingress",
+      "label": "info_attribute.terraform.aws_security_group.app_firewall.ingress",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_security_group.app_firewall.name",
+      "label": "info_attribute.terraform.aws_security_group.app_firewall.name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.app_firewall.name_prefix",
+      "label": "aws_security_group.app_firewall.name_prefix",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.app_firewall.owner_id",
+      "label": "aws_security_group.app_firewall.owner_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.app_firewall.revoke_rules_on_delete",
+      "label": "aws_security_group.app_firewall.revoke_rules_on_delete",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.app_firewall.tags",
+      "label": "aws_security_group.app_firewall.tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.app_firewall.tags_all",
+      "label": "aws_security_group.app_firewall.tags_all",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_security_group.app_firewall.vpc_id",
+      "label": "aws_security_group.app_firewall.vpc_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
       "id": "info_business.REQ_11",
       "label": "info_business.REQ_11",
       "shape": "ellipse",
@@ -473,6 +2066,770 @@
     {
       "from": "s3_bucket_name.value",
       "to": "s3_bucket_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.acceleration_status"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.acl"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "info_attribute.terraform.aws_s3_bucket.critical_data.bucket"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.bucket_domain_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.bucket_prefix"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.bucket_regional_domain_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.force_destroy"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.hosted_zone_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.object_lock_enabled"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.policy"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.region"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.request_payer"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.tags_all"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.website_domain"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.critical_data.website_endpoint"
+    },
+    {
+      "from": "info_attribute.terraform.aws_s3_bucket.critical_data.bucket",
+      "to": "aws_s3_bucket.critical_data.bucket"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.address"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "info_attribute.terraform.aws_db_instance.production_db.allocated_storage"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.allow_major_version_upgrade"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.apply_immediately"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.auto_minor_version_upgrade"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.availability_zone"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.backup_retention_period"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.backup_target"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.backup_window"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.ca_cert_identifier"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.character_set_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.copy_tags_to_snapshot"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.custom_iam_instance_profile"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.customer_owned_ip_enabled"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.database_insights_mode"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.db_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.db_subnet_group_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.dedicated_log_volume"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.delete_automated_backups"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.deletion_protection"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.domain"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.domain_auth_secret_arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.domain_dns_ips"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.domain_fqdn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.domain_iam_role_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.domain_ou"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.enabled_cloudwatch_logs_exports"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.endpoint"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "info_attribute.terraform.aws_db_instance.production_db.engine"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.engine_lifecycle_support"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.engine_version"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.engine_version_actual"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.final_snapshot_identifier"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.hosted_zone_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.iam_database_authentication_enabled"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.identifier"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.identifier_prefix"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "info_attribute.terraform.aws_db_instance.production_db.instance_class"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.iops"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.kms_key_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.latest_restorable_time"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.license_model"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.listener_endpoint"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.maintenance_window"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.manage_master_user_password"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.master_user_secret"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.master_user_secret_kms_key_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.max_allocated_storage"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.monitoring_interval"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.monitoring_role_arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.multi_az"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.nchar_character_set_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.network_type"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.option_group_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.parameter_group_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "info_attribute.terraform.aws_db_instance.production_db.password"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.password_wo"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.password_wo_version"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.performance_insights_enabled"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.performance_insights_kms_key_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.performance_insights_retention_period"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.port"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.publicly_accessible"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.replica_mode"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.replicas"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.replicate_source_db"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.resource_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.skip_final_snapshot"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.snapshot_identifier"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.status"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.storage_encrypted"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.storage_throughput"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.storage_type"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.tags_all"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.timezone"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.upgrade_storage_config"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "info_attribute.terraform.aws_db_instance.production_db.username"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_db_instance",
+      "to": "aws_db_instance.production_db.vpc_security_group_ids"
+    },
+    {
+      "from": "info_attribute.terraform.aws_db_instance.production_db.allocated_storage",
+      "to": "aws_db_instance.production_db.allocated_storage"
+    },
+    {
+      "from": "info_attribute.terraform.aws_db_instance.production_db.engine",
+      "to": "aws_db_instance.production_db.engine"
+    },
+    {
+      "from": "info_attribute.terraform.aws_db_instance.production_db.instance_class",
+      "to": "aws_db_instance.production_db.instance_class"
+    },
+    {
+      "from": "info_attribute.terraform.aws_db_instance.production_db.password",
+      "to": "aws_db_instance.production_db.password"
+    },
+    {
+      "from": "info_attribute.terraform.aws_db_instance.production_db.username",
+      "to": "aws_db_instance.production_db.username"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "info_attribute.terraform.aws_instance.stateful_server.ami"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.associate_public_ip_address"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.availability_zone"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.cpu_core_count"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.cpu_threads_per_core"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.disable_api_stop"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.disable_api_termination"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.ebs_optimized"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.enable_primary_ipv6"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.get_password_data"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.hibernation"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.host_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.host_resource_group_arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.iam_instance_profile"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.instance_initiated_shutdown_behavior"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.instance_lifecycle"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.instance_state"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "info_attribute.terraform.aws_instance.stateful_server.instance_type"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.ipv6_address_count"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.ipv6_addresses"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.key_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.monitoring"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.outpost_arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.password_data"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.placement_group"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.placement_partition_number"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.primary_network_interface_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.private_dns"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.private_ip"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.public_dns"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.public_ip"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.secondary_private_ips"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.security_groups"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.source_dest_check"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.spot_instance_request_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.subnet_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.tags_all"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.tenancy"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "info_attribute.terraform.aws_instance.stateful_server.user_data"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.user_data_base64"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.user_data_replace_on_change"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.volume_tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.stateful_server.vpc_security_group_ids"
+    },
+    {
+      "from": "info_attribute.terraform.aws_instance.stateful_server.ami",
+      "to": "aws_instance.stateful_server.ami"
+    },
+    {
+      "from": "info_attribute.terraform.aws_instance.stateful_server.instance_type",
+      "to": "aws_instance.stateful_server.instance_type"
+    },
+    {
+      "from": "info_attribute.terraform.aws_instance.stateful_server.user_data",
+      "to": "aws_instance.stateful_server.user_data"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "info_attribute.terraform.aws_iam_role.admin_role.assume_role_policy"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.create_date"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.description"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.force_detach_policies"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.managed_policy_arns"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.max_session_duration"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "info_attribute.terraform.aws_iam_role.admin_role.name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.name_prefix"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.path"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.permissions_boundary"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.tags_all"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_iam_role",
+      "to": "aws_iam_role.admin_role.unique_id"
+    },
+    {
+      "from": "info_attribute.terraform.aws_iam_role.admin_role.assume_role_policy",
+      "to": "aws_iam_role.admin_role.assume_role_policy"
+    },
+    {
+      "from": "info_attribute.terraform.aws_iam_role.admin_role.name",
+      "to": "aws_iam_role.admin_role.name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.app_firewall"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.app_firewall.arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "info_attribute.terraform.aws_security_group.app_firewall.description"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.app_firewall.egress"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.app_firewall.id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "info_attribute.terraform.aws_security_group.app_firewall.ingress"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "info_attribute.terraform.aws_security_group.app_firewall.name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.app_firewall.name_prefix"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.app_firewall.owner_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.app_firewall.revoke_rules_on_delete"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.app_firewall.tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.app_firewall.tags_all"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_security_group",
+      "to": "aws_security_group.app_firewall.vpc_id"
+    },
+    {
+      "from": "info_attribute.terraform.aws_security_group.app_firewall.description",
+      "to": "aws_security_group.app_firewall.description"
+    },
+    {
+      "from": "info_attribute.terraform.aws_security_group.app_firewall.ingress",
+      "to": "aws_security_group.app_firewall.ingress"
+    },
+    {
+      "from": "info_attribute.terraform.aws_security_group.app_firewall.name",
+      "to": "aws_security_group.app_firewall.name"
     },
     {
       "from": "info_business.REQ_11",

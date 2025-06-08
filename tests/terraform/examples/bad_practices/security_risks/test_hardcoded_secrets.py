@@ -26,23 +26,92 @@ async def test_basic(make_project_processor):
     comparator.addPlace(
         Place(
             spanText="""
-resource "aws_s3_bucket_lifecycle_configuration" "cleanup" {
-  bucket = aws_s3_bucket.app_data.id
-
-  rule {
-    id     = "expire-logs"
-    status = "Enabled"
-
-    expiration {
-      # ← здесь бизнес-логика перепутана:
-      # для production должно быть 30 дней, а не 7
-      days = var.environment == "production" ? 7 : 30
-    }
-  }
+provider "aws" {
+  region     = "us-east-1"
+  access_key = "AKIAIOSFODNN7EXAMPLE"    # Hardcoded access key
+  secret_key = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"  # Hardcoded secret key
 }
             """,
             requirementsKeys=[
-                "REQ_22",
+                "REQ_HARDCODED_VALUES", "REQ_HARDCODED_SECRETS", "REQ_UNPINNED_VERSIONS", "REQ_REMOTE_STATE_AND_PARAMETRIZATION"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_db_instance" "prod_database" {
+  identifier     = "prod-mysql"
+  engine         = "mysql"
+  instance_class = "db.t3.micro"
+  allocated_storage = 20
+  
+  # Hardcoded credentials
+  username = "admin"
+  password = "SuperSecretPassword123!"   # Plaintext password in code
+
+  publicly_accessible = false
+  skip_final_snapshot = true
+}
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_VALUES", "REQ_HARDCODED_SECRETS", "REQ_UNPINNED_VERSIONS", "REQ_REMOTE_STATE_AND_PARAMETRIZATION"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_s3_bucket" "app_data" {
+  bucket = "my-app-sensitive-data-bucket"
+}
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_VALUES", "REQ_13"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_iam_user" "deploy_user" {
+  name = "ci_cd_deploy_user"
+}
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_VALUES", "REQ_13"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_iam_access_key" "deploy_key" {
+  user = aws_iam_user.deploy_user.name
+  pgp_key = "plaintext-key-should-NOT-be-here"  # Should use keybase or KMS
+}
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_SECRETS", "REQ_HARDCODED_VALUES"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+output "database_password" {
+  value = aws_db_instance.prod_database.password
+}
+            """,
+            requirementsKeys=[
+                "REQ_SENSITIVE_OUTPUTS"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+output "deploy_user_secret" {
+  value = aws_iam_access_key.deploy_key.secret
+  sensitive = false  # Explicitly disabling sensitive protection
+}
+            """,
+            requirementsKeys=[
+                "REQ_SENSITIVE_OUTPUTS"
             ],
         )
     )

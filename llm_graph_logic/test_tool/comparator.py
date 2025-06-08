@@ -1,14 +1,14 @@
 import csv
-from pathlib import Path
-from typing import List, Optional, Set, Literal, Dict, Union
 from dataclasses import dataclass
-from pydantic import BaseModel, Field
+from pathlib import Path
+
 import torch
+from pydantic import BaseModel, Field
 from sentence_transformers import SentenceTransformer, util
 from sklearn.metrics import (
-    precision_recall_fscore_support,
-    jaccard_score,
     accuracy_score,
+    jaccard_score,
+    precision_recall_fscore_support,
 )
 from sklearn.preprocessing import MultiLabelBinarizer
 
@@ -16,7 +16,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 @dataclass
 class Place:
     spanText: str
-    requirementsKeys: List[str]
+    requirementsKeys: list[str]
 
 
     def to_dict(self) -> dict:
@@ -34,13 +34,13 @@ class Metrics(BaseModel):
 
 
 class MultiAverageComparisonResult(BaseModel):
-    gold: List[dict]
-    predicted: List[dict]
-    all_metrics: Dict[str, Metrics]
+    gold: list[dict]
+    predicted: list[dict]
+    all_metrics: dict[str, Metrics]
 
     def save_to_csv(
         self,
-        filepath: Union[str, Path],
+        filepath: str | Path,
         category: str,
         model_name: str,
         project_name: str
@@ -83,11 +83,11 @@ class MultiAverageComparisonResult(BaseModel):
 
 class Comparator:
     def __init__(self, model_name: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"):
-        self.places: List[Place] = []
+        self.places: list[Place] = []
 
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.model = SentenceTransformer(model_name, device=self.device)
-        self._place_embeddings: Optional[torch.Tensor] = None
+        self._place_embeddings: torch.Tensor | None = None
 
     def addPlace(self, place: Place) -> "Comparator":
         self.places.append(place)
@@ -103,7 +103,7 @@ class Comparator:
         else:
             self._place_embeddings = torch.zeros((0, self.model.get_sentence_embedding_dimension()), device=self.device)
 
-    def searchPlace(self, searchText: str, threshold: float = 0.6) -> Optional[Place]:
+    def searchPlace(self, searchText: str, threshold: float = 0.6) -> Place | None:
         self._ensure_embeddings()
         if self._place_embeddings is None or self._place_embeddings.shape[0] == 0:
             return None
@@ -117,10 +117,10 @@ class Comparator:
             return self.places[best_idx]
         return None
 
-    def compare_places(self, gold_places: List[Place]) -> MultiAverageComparisonResult:
+    def compare_places(self, gold_places: list[Place]) -> MultiAverageComparisonResult:
         gold_dicts, pred_dicts = [], []
-        y_true: List[Set[str]] = []
-        y_pred: List[Set[str]] = []
+        y_true: list[set[str]] = []
+        y_pred: list[set[str]] = []
 
         for gold in gold_places:
             pred = self.searchPlace(gold.spanText) or Place(spanText=gold.spanText, requirementsKeys=[])
@@ -154,7 +154,7 @@ class Comparator:
 
         subset_accuracy = accuracy_score(y_true_bin, y_pred_bin)
 
-        metrics_result: Dict[str, Metrics] = {
+        metrics_result: dict[str, Metrics] = {
             "micro": Metrics(precision=precision_micro, recall=recall_micro, f1=f1_micro, jaccard=jaccard_micro),
             "macro": Metrics(precision=precision_macro, recall=recall_macro, f1=f1_macro, jaccard=jaccard_macro),
             "samples": Metrics(precision=precision_samples, recall=recall_samples, f1=f1_samples, jaccard=jaccard_samples),

@@ -26,23 +26,117 @@ async def test_basic(make_project_processor):
     comparator.addPlace(
         Place(
             spanText="""
-resource "aws_s3_bucket_lifecycle_configuration" "cleanup" {
-  bucket = aws_s3_bucket.app_data.id
+provider "aws" {
+  region = "us-east-1"
+}
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_VALUES", "REQ_UNPINNED_VERSIONS", "REQ_REMOTE_STATE_AND_PARAMETRIZATION"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_s3_bucket" "critical_data" {
+  bucket = "my-company-critical-data-12345"  # Must be globally unique
+}
+            """,
+            requirementsKeys=[
+                "REQ_LIFECYCLE_RULES", "REQ_HARDCODED_VALUES", "REQ_13"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_db_instance" "production_db" {
+  instance_class    = "db.t3.micro"
+  engine            = "mysql"
+  allocated_storage = 20
+  username          = "admin"
+  password          = "insecurepassword"  # Never do this in real code!
+}
+            """,
+            requirementsKeys=[
+                "REQ_LIFECYCLE_RULES", "REQ_HARDCODED_VALUES", "REQ_HARDCODED_SECRETS", "REQ_13", "REQ_24"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_instance" "stateful_server" {
+  ami           = "ami-0c55b159cbfafe1f0"  # Ubuntu 20.04 LTS
+  instance_type = "t2.micro"
+  user_data     = <<-EOF
+                  #!/bin/bash
+                  mkdir /data
+                  mount /dev/xvdf /data
+                  EOF
+}
+            """,
+            requirementsKeys=[
+                "REQ_LIFECYCLE_RULES", "REQ_HARDCODED_VALUES", "REQ_13"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_iam_role" "admin_role" {
+  name = "AdminAccessRole"
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [{
+      Action = "sts:AssumeRole"
+      Effect = "Allow"
+      Principal = {
+        AWS = "arn:aws:iam::123456789012:root"
+      }
+    }]
+  })
+}
+            """,
+            requirementsKeys=[
+                "REQ_LIFECYCLE_RULES", "REQ_HARDCODED_VALUES", "REQ_13"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_security_group" "app_firewall" {
+  name        = "app-firewall"
+  description = "Application security group"
 
-  rule {
-    id     = "expire-logs"
-    status = "Enabled"
-
-    expiration {
-      # ← здесь бизнес-логика перепутана:
-      # для production должно быть 30 дней, а не 7
-      days = var.environment == "production" ? 7 : 30
-    }
+  ingress {
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 }
             """,
             requirementsKeys=[
-                "REQ_22",
+                "REQ_HARDCODED_VALUES", "REQ_13"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+output "db_password" {
+  value = aws_db_instance.production_db.password
+}
+            """,
+            requirementsKeys=[
+                "REQ_SENSITIVE_OUTPUTS"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+output "s3_bucket_name" {
+  value = aws_s3_bucket.critical_data.bucket
+}
+            """,
+            requirementsKeys=[
+                "REQ_SENSITIVE_OUTPUTS"
             ],
         )
     )

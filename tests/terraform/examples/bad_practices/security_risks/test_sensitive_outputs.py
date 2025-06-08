@@ -18,31 +18,148 @@ async def test_basic(make_project_processor):
     requirements_paths = ["tests/terraform/requirements/bad_practices.json"]
     cache_path = f"tests/terraform/cache/bad_practices/{category}/{project_id}"
 
-    processor, requirements_list = make_project_processor(project_id, project_path, requirements_paths, cache_path)
+    processor, requirements_list = make_project_processor(
+        project_id, project_path, requirements_paths, cache_path)
     await processor.processProjects()
-    processor.saveGraph2VisJS(project_id, Path(f"tests/terraform/graphs/bad_practices/{category}/test_{project_id}.json"))
+    processor.saveGraph2VisJS(project_id, Path(
+        f"tests/terraform/graphs/bad_practices/{category}/test_{project_id}.json"))
 
     comparator = Comparator(testing_model)
     comparator.addPlace(
         Place(
             spanText="""
-resource "aws_s3_bucket_lifecycle_configuration" "cleanup" {
-  bucket = aws_s3_bucket.app_data.id
-
-  rule {
-    id     = "expire-logs"
-    status = "Enabled"
-
-    expiration {
-      # ← здесь бизнес-логика перепутана:
-      # для production должно быть 30 дней, а не 7
-      days = var.environment == "production" ? 7 : 30
-    }
-  }
+provider "aws" {
+  region = "us-east-1"
 }
             """,
             requirementsKeys=[
-                "REQ_22",
+                "REQ_HARDCODED_VALUES", "REQ_UNPINNED_VERSIONS", "REQ_REMOTE_STATE_AND_PARAMETRIZATION"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "random_password" "db_password" {
+  length  = 16
+  special = true
+}
+            """,
+            requirementsKeys=[],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_db_instance" "app_database" {
+  allocated_storage = 10
+  engine            = "mysql"
+  instance_class    = "db.t3.micro"
+  username          = "admin"
+  password          = random_password.db_password.result
+}
+
+            """,
+            requirementsKeys=[
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_iam_user" "app_user" {
+  name = "application-user"
+}
+            """,
+            requirementsKeys=[
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_iam_access_key" "app_key" {
+  user = aws_iam_user.app_user.name
+}
+            """,
+            requirementsKeys=[
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+output "database_password" {
+  value = aws_db_instance.app_database.password
+  # Missing: sensitive = true
+}
+            """,
+            requirementsKeys=[
+                "REQ_SENSITIVE_OUTPUTS"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+output "iam_access_key_id" {
+  value = aws_iam_access_key.app_key.id
+}
+            """,
+            requirementsKeys=[
+                "REQ_SENSITIVE_OUTPUTS"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+output "iam_secret_key" {
+  value = aws_iam_access_key.app_key.secret
+  # Missing: sensitive = true
+}
+            """,
+            requirementsKeys=[
+                "REQ_SENSITIVE_OUTPUTS"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+output "db_connection" {
+  value = "Server=${aws_db_instance.app_database.endpoint};User ID=admin;Password=${aws_db_instance.app_database.password}"
+}
+            """,
+            requirementsKeys=[
+                "REQ_SENSITIVE_OUTPUTS"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+output "api_gateway_key" {
+  value = aws_apigatewayv2_api_key.main.value
+}
+            """,
+            requirementsKeys=[
+                "REQ_SENSITIVE_OUTPUTS"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_apigatewayv2_api" "main" {
+  name          = "bad-practice-api"
+  protocol_type = "HTTP"
+}
+            """,
+            requirementsKeys=[
+
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_apigatewayv2_api_key" "main" {
+  api_id = aws_apigatewayv2_api.main.id
+  name   = "production-key"
+}
+            """,
+            requirementsKeys=[
+
             ],
         )
     )
@@ -60,5 +177,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "cleanup" {
             )
         )
     )
-    maComparationResults = llmGraphTester.test(processor.getAnalyzerResults(project_id))
-    maComparationResults.save_to_csv(Path(f"tests/terraform/results/metrics/{project_id}.csv"), project_name=project_id, category=category, model_name=testing_model)
+    maComparationResults = llmGraphTester.test(
+        processor.getAnalyzerResults(project_id))
+    maComparationResults.save_to_csv(Path(
+        f"tests/terraform/results/metrics/{project_id}.csv"), project_name=project_id, category=category, model_name=testing_model)

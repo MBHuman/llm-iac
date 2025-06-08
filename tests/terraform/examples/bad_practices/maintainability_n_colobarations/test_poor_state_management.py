@@ -26,24 +26,62 @@ async def test_basic(make_project_processor):
     comparator.addPlace(
         Place(
             spanText="""
-resource "aws_s3_bucket_lifecycle_configuration" "cleanup" {
-  bucket = aws_s3_bucket.app_data.id
-
-  rule {
-    id     = "expire-logs"
-    status = "Enabled"
-
-    expiration {
-      # ← здесь бизнес-логика перепутана:
-      # для production должно быть 30 дней, а не 7
-      days = var.environment == "production" ? 7 : 30
-    }
+terraform {
+  # ❌ Default local state (team collaboration nightmare)
+  backend "local" {
+    path = "terraform.tfstate"
   }
 }
             """,
             requirementsKeys=[
-                "REQ_22",
+                "REQ_REMOTE_STATE_AND_PARAMETRIZATION", "REQ_14"
             ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+provider "aws" {
+  region = "us-east-1"
+}
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_VALUES", "REQ_UNPINNED_VERSIONS"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_s3_bucket" "team_data" {
+  bucket = "our-company-data-bucket"
+}
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_VALUES", "REQ_13"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+resource "aws_db_instance" "main_db" {
+  allocated_storage    = 20
+  engine               = "mysql"
+  instance_class       = "db.t3.medium"
+  identifier           = "main-production-db"  # ❌ Hardcoded identifier
+}
+
+            """,
+            requirementsKeys=[
+                "REQ_HARDCODED_VALUES", "REQ_13"
+            ],
+        )
+    ).addPlace(
+        Place(
+            spanText="""
+output "db_endpoint" {
+  value = aws_db_instance.main_db.endpoint
+}
+            """,
+            requirementsKeys=[],
         )
     )
 

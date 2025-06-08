@@ -3,7 +3,7 @@
 # Generated on: c:\Users\zenka\Documents\github\llm-iac\over_provisioned_resources.csv
 
 category,project_name,model_name,metric,precision,recall,f1,jaccard
-cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.0000,0.0000,0.0000,0.0000
-cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0000,0.0000,0.0000,0.0000
-cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.0000,0.0000,0.0000,0.3333
-cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.3333,0.3333,0.3333,0.3333
+cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.3333,0.2308,0.2727,0.1579
+cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.1042,0.1250,0.1125,0.1042
+cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.2500,0.1500,0.1852,0.1083
+cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0000,0.0000,0.0000,0.0000
