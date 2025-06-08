@@ -13,16 +13,17 @@ from tests.terraform.fixtures import *
 async def test_basic(make_project_processor):
     testing_model = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
     project_id = "password"
+    category = "basic"
     project_path = f"tests/terraform/examples/basic/{project_id}"
     requirements_paths = ["tests/terraform/requirements/bad_practices.json"]
-    cache_path = f"tests/terraform/cache/basic/{project_id}"
+    cache_path = f"tests/terraform/cache/{category}/{project_id}"
 
     processor, requirements_list = make_project_processor(
         project_id, project_path, requirements_paths, cache_path
     )
     await processor.processProjects()
     processor.saveGraph2VisJS(
-        project_id, Path(f"tests/terraform/graphs/basic/test_{project_id}.json")
+        project_id, Path(f"tests/terraform/graphs/{category}/test_{project_id}.json")
     )
 
     comparator = Comparator(testing_model)
@@ -76,11 +77,11 @@ async def test_basic(make_project_processor):
             ResultProcessor().setClassifier(
                 TransformerClassifier(
                     requirements_list=requirements_list,
-                    threshold=0.3,
+                    threshold=0.5,
                     model_name=testing_model,
                 )
             )
         )
     )
     maComparationResults = llmGraphTester.test(processor.getAnalyzerResults(project_id))
-    print(maComparationResults)
+    maComparationResults.save_to_csv(Path(f"tests/terraform/results/metrics/{project_id}.csv"), project_name=project_id, category=category, model_name=testing_model)

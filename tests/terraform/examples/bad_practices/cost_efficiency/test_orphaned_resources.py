@@ -12,6 +12,6 @@ async def test_basic(make_project_processor):
     requirements_paths = ["tests/terraform/requirements/bad_practices.json"]
     cache_path = f"tests/terraform/cache/bad_practices/cost_efficiency/{project_id}"
 
-    processor = make_project_processor(project_id, project_path, requirements_paths, cache_path)
+    processor, requirements_list = make_project_processor(project_id, project_path, requirements_paths, cache_path)
     await processor.processProjects()
     processor.saveGraph2VisJS(project_id, Path(f"tests/terraform/graphs/bad_practices/cost_efficiency/test_{project_id}.json"))
