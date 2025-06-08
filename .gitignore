@@ -1,0 +1,11 @@
+.DS_Store
+.venv
+.terraform
+.terraform.lock.hcl
+__pycache__
+cache
+./out
+.pytest_cache
+.idea
+.mypy_cache
+.ruff_cache

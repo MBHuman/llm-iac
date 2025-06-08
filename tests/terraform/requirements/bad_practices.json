@@ -1,0 +1,461 @@
+{
+  "REQ_01": {
+    "description": "Terraform configuration must not contain hardcoded secrets (passwords, API keys, or other credentials) directly in *.tf files; instead, use external secret stores or environment variables.",
+    "keywords": [
+      "secret_storage",
+      "HardcodedSecrets",
+      "Vault",
+      "environment_variables",
+      "secrets"
+    ],
+    "language": "en",
+    "useCase": "Avoid writing aws_access_key = \"AKIA...\" directly in the *.tf file; use environment variables or tools like Vault instead."
+  },
+  "REQ_02": {
+    "description": "IAM policy permissions must be restricted to the minimum necessary set of actions; using \"Resource\": \"*\" in aws_iam_policy is unacceptable. Specific ARNs must be provided or conditional expressions used to narrow the permissions.",
+    "keywords": [
+      "IAM",
+      "permissions",
+      "restrictions",
+      "UnrestrictedIAMPolicies",
+      "least_privilege"
+    ],
+    "language": "en",
+    "useCase": "Instead of allowing all resources with \"Resource\": \"*\", specify exact ARNs like \"Resource\": \"arn:aws:s3:::my-bucket/*\"."
+  },
+  "REQ_03": {
+    "description": "Terraform state files must be stored in secure, private storage (e.g., encrypted S3 bucket with versioning enabled and restricted access), avoiding public exposure.",
+    "keywords": [
+      "state",
+      "S3",
+      "encryption",
+      "PublicState",
+      "configuration_storage"
+    ],
+    "language": "en",
+    "useCase": "Use a private S3 bucket with server-side encryption and disable public access when configuring backend \"s3\"."
+  },
+  "REQ_04": {
+    "description": "Values exposed through the output block must not contain sensitive data unless marked with sensitive = true. Secrets must not be printed to the console in plain text.",
+    "keywords": [
+      "Output",
+      "SensitiveOutputs",
+      "secrets",
+      "sensitive_true",
+      "confidentiality"
+    ],
+    "language": "en",
+    "useCase": "When outputting a password, use `output \"db_password\" { value = var.db_password, sensitive = true }` to prevent leaking it in logs."
+  },
+  "REQ_05": {
+    "description": "When using an S3 backend, state locking must be enabled via DynamoDB or a similar mechanism to prevent simultaneous modification of single state files.",
+    "keywords": [
+      "state_lock",
+      "DynamoDB",
+      "MissingStateLocking",
+      "S3_backend",
+      "consistency"
+    ],
+    "language": "en",
+    "useCase": "Configure the backend with `dynamodb_table = \"terraform-locks\"` to enable state locking and avoid conflicting updates."
+  },
+    "REQ_06": {
+    "description": "Dependencies between resources must be explicitly defined (via correct use of depends_on or attribute references) to avoid unpredictable creation/deletion sequences.",
+    "keywords": [
+      "depends_on",
+      "dependencies",
+      "FragileDependencies",
+      "creation_order",
+      "resource_dependencies"
+    ],
+    "language": "en",
+    "useCase": "Use `depends_on = [aws_iam_role.my_role]` in aws_lambda_function to ensure the IAM role is created before the function."
+  },
+  "REQ_07": {
+    "description": "For critical resources, a lifecycle block with prevent_destroy = true (or similar rules) must be set to avoid accidental deletion of important objects.",
+    "keywords": [
+      "lifecycle",
+      "prevent_destroy",
+      "NoLifecycleRules",
+      "deletion_protection",
+      "lifecycle_management"
+    ],
+    "language": "en",
+    "useCase": "Add `lifecycle { prevent_destroy = true }` to aws_rds_instance to protect the database from being destroyed unintentionally."
+  },
+  "REQ_08": {
+    "description": "Provider and module versions in Terraform files must be pinned to exact versions (= 3.1.0 or similar) rather than using ~> or >=, to prevent unexpected behavior changes during updates.",
+    "keywords": [
+      "versioning",
+      "UnpinnedVersions",
+      "fixed_versions",
+      "Terraform_providers",
+      "modules"
+    ],
+    "language": "en",
+    "useCase": "Specify `version = \"= 4.66.0\"` for the AWS provider to avoid unintended upgrades when running terraform init."
+  },
+  "REQ_09": {
+    "description": "Resources must not be over-provisioned; instance types and other parameters should match actual workloads, instead of using overly large defaults.",
+    "keywords": [
+      "over_provisioning",
+      "OverProvisionedResources",
+      "underutilized_instances",
+      "resource_optimization"
+    ],
+    "language": "en",
+    "useCase": "Instead of using `t3.2xlarge` for a dev environment, evaluate CPU usage and choose `t3.micro` or `t3.small` if sufficient."
+  },
+  "REQ_10": {
+    "description": "After deleting test or temporary infrastructure components, cleanup of dependent objects (e.g., detaching and deleting dangling volumes) must be automated to avoid orphaned resources.",
+    "keywords": [
+      "orphaned_resources",
+      "automatic_cleanup",
+      "OrphanedResources",
+      "dangling_volumes"
+    ],
+    "language": "en",
+    "useCase": "Use a null_resource with provisioner script or lifecycle hook to automatically delete unattached EBS volumes after instance termination."
+  },
+    "REQ_11": {
+    "description": "For scalable services, auto-scaling mechanisms (e.g., auto-scaling groups, AWS ASG) must be used instead of setting a static number of instances via count/for_each.",
+    "keywords": [
+      "auto_scaling",
+      "NonUsageOfAutoScaling",
+      "scalability",
+      "ASG",
+      "dynamic_scaling"
+    ],
+    "language": "en",
+    "useCase": "Avoid using `count = 3` for EC2 instances; instead, define an `aws_autoscaling_group` with dynamic scaling policies."
+  },
+  "REQ_12": {
+    "description": "Terraform configurations must be modularized (using modules) instead of a single monolithic main.tf file to simplify maintenance, reuse, and testing.",
+    "keywords": [
+      "modularization",
+      "MonolithicConfigurations",
+      "modules",
+      "code_structure",
+      "terraform_code"
+    ],
+    "language": "en",
+    "useCase": "Refactor a single `main.tf` into modules like `network`, `compute`, and `security`, then call them from a root module using `module` blocks."
+  },
+  "REQ_13": {
+    "description": "All variables must be defined in variable blocks with required validation instead of hardcoded values (e.g., AMI, region) to ensure input correctness.",
+    "keywords": [
+      "variables",
+      "validation",
+      "LackOfVariables",
+      "validators",
+      "configuration_flexibility"
+    ],
+    "language": "en",
+    "useCase": "Instead of hardcoding `ami = \"ami-0abcdef\"`, define a variable `ami_id` with `validation { condition = ... }` and pass it via `terraform.tfvars`."
+  },
+  "REQ_14": {
+    "description": "Using local backend (backend \"local\") is not allowed in team collaboration. A shared backend (S3 + DynamoDB, Terraform Cloud, etc.) must be configured for collaborative work.",
+    "keywords": [
+      "backend",
+      "local_state",
+      "PoorStateManagement",
+      "collaboration",
+      "remote_backend"
+    ],
+    "language": "en",
+    "useCase": "Replace `backend \"local\" {}` with `backend \"s3\" { bucket = \"team-terraform-state\" ... }` to allow shared state and state locking."
+  },
+  "REQ_15": {
+    "description": "Each module, resource, and variable in the Terraform configuration must be accompanied by descriptions and comments to facilitate understanding and maintenance.",
+    "keywords": [
+      "documentation",
+      "UndocumentedCode",
+      "description",
+      "comments",
+      "readability"
+    ],
+    "language": "en",
+    "useCase": "Add `description = \"ID of the AMI to use for the instance\"` in variable blocks and inline comments above resources explaining their purpose."
+  },
+    "REQ_16": {
+    "description": "Too many resources should not be collected into a single state file; as infrastructure grows, state should be split into multiple files (workspaces, multiple backends) to speed up operations and reduce collision risks.",
+    "keywords": [
+      "large_state",
+      "LargeSingleStateFiles",
+      "state_splitting",
+      "workspace",
+      "scalability"
+    ],
+    "language": "en",
+    "useCase": "Split infrastructure into logical modules (e.g., networking, compute, monitoring), each with its own backend configuration to avoid locking large shared state files."
+  },
+  "REQ_17": {
+    "description": "Usage of count/for_each must be optimized, and complex loops or conditions in configurations should be avoided, as they can cause linear or exponential growth in plan/apply execution time.",
+    "keywords": [
+      "loops",
+      "UnoptimizedLoops",
+      "count",
+      "for_each",
+      "performance",
+      "optimization"
+    ],
+    "language": "en",
+    "useCase": "Instead of dynamically computing dozens of nested resources with `for_each`, precompute and pass a flat list via variables to simplify the apply logic."
+  },
+  "REQ_18": {
+    "description": "To separate environments (dev, staging, prod), use Terraform workspaces or separate directories with their own configurations and backends, to prevent mixing resources between environments.",
+    "keywords": [
+      "workspaces",
+      "environment_isolation",
+      "NoWorkspaceIsolation",
+      "dev_prod",
+      "environments"
+    ],
+    "language": "en",
+    "useCase": "Create `environments/dev`, `environments/prod`, and assign separate backends to each to avoid accidental cross-environment resource creation."
+  },
+  "REQ_19": {
+    "description": "All infrastructure configuration must be managed exclusively through Terraform. Manual changes (e.g., via AWS Console) should be blocked or automatically detected to prevent state drift.",
+    "keywords": [
+      "drift",
+      "ManualDriftCreation",
+      "Terraform_only",
+      "synchronization",
+      "state_drift"
+    ],
+    "language": "en",
+    "useCase": "Use AWS IAM policies to restrict console edits and enable drift detection tools to monitor for out-of-band changes in infrastructure."
+  },
+  "REQ_20": {
+    "description": "Running terraform apply with the -auto-approve flag in CI/CD pipelines without prior plan review is not allowed. A manual or automated validation of the terraform plan must be done before applying changes.",
+    "keywords": [
+      "auto_approve",
+      "DisabledPlanConfirmation",
+      "CI/CD",
+      "apply_safety",
+      "review_plan"
+    ],
+    "language": "en",
+    "useCase": "Configure CI to run `terraform plan` as a separate step, store the plan file as an artifact, and run `terraform apply -input=false plan.out` only after validation."
+  },
+  "REQ_21": {
+    "description": "All changes must undergo a mandatory review of the terraform plan output before being applied. Ignoring the plan result is unacceptable to avoid unintended infrastructure changes.",
+    "keywords": [
+      "plan_output",
+      "IgnoringPlanOutput",
+      "validation",
+      "plan_analysis",
+      "safety"
+    ],
+    "language": "en",
+    "useCase": "Always review the output of `terraform plan` before running `terraform apply`; for example, ensure that no critical resource is being destroyed unintentionally."
+  },
+  "REQ_23": {
+    "description": "Instead of defining a static number of EC2 instances (e.g., count = 3) for web servers, use Auto Scaling Groups to automatically scale the cluster based on load.",
+    "keywords": [
+      "auto_scaling",
+      "EC2",
+      "static_count",
+      "NonUsageOfAutoScaling",
+      "scaling"
+    ],
+    "language": "en",
+    "useCase": "Avoid setting `count = 3` for `aws_instance.web`; instead, configure `aws_autoscaling_group` with scaling policies triggered by CPU utilization."
+  },
+  "REQ_24": {
+    "description": "Databases should not be deployed with a fixed size (e.g., db.t3.medium) without auto-scaling mechanisms. Use scalable RDS options such as Aurora Serverless or Read Replicas.",
+    "keywords": [
+      "auto_scaling",
+      "RDS",
+      "static_db",
+      "NonUsageOfAutoScaling",
+      "scalable_DB"
+    ],
+    "language": "en",
+    "useCase": "Use `aws_rds_cluster` with `engine_mode = 'serverless'` instead of a fixed-size `aws_db_instance` to allow scaling based on load."
+  },
+  "REQ_25": {
+    "description": "When removing an aws_ebs_volume resource from Terraform state, ensure the corresponding EBS volume is also deleted in AWS to prevent orphaned resources.",
+    "keywords": [
+      "orphaned_resources",
+      "aws_ebs_volume",
+      "state_rm",
+      "OrphanedResources",
+      "resource_cleanup"
+    ],
+    "language": "en",
+    "useCase": "After running `terraform state rm aws_ebs_volume.unused`, manually delete the EBS volume in the AWS console or automate cleanup with a lifecycle policy."
+  },
+    "REQ_26": {
+    "description": "If an aws_security_group is removed from configuration, it must also be properly removed from the Terraform state and then from AWS, to avoid dangling security groups.",
+    "keywords": [
+      "dangling_resources",
+      "aws_security_group",
+      "state_rm",
+      "OrphanedResources",
+      "security"
+    ],
+    "language": "en",
+    "useCase": "After removing `aws_security_group.web_sg` from code, run `terraform state rm` and delete the group manually or through a cleanup script to avoid unused security groups."
+  },
+  "REQ_27": {
+    "description": "Resources created manually (e.g., null_resource with local-exec) must either be managed via Terraform or deleted immediately after use, to avoid unmanaged objects in AWS.",
+    "keywords": [
+      "manual_resource",
+      "null_resource",
+      "OrphanedResources",
+      "resource_management",
+      "clean_up"
+    ],
+    "language": "en",
+    "useCase": "If a `null_resource` creates an S3 bucket via `aws cli`, either add the bucket to Terraform or delete it in the `local-exec` `destroy` provisioner."
+  },
+  "REQ_28": {
+    "description": "Manipulation of the Terraform state (e.g., terraform state rm) must be done with caution. Before removing entries from state, corresponding AWS objects must be deleted to avoid desynchronization and loss of control.",
+    "keywords": [
+      "state_manipulation",
+      "terraform_state_rm",
+      "PoorStateManagement",
+      "synchronization",
+      "consistency"
+    ],
+    "language": "en",
+    "useCase": "Before running `terraform state rm aws_db_instance.legacy`, ensure the DB instance is deleted in AWS to avoid an unmanaged live resource."
+  },
+  "REQ_OVER_PROVISIONED": {
+    "description": "Terraform configuration must not include resources significantly exceeding actual workload requirements. Instance types and other parameters should be sized proportionally to real needs to optimize cost.",
+    "keywords": [
+      "instance_type",
+      "over_provisioning",
+      "CostEfficiency",
+      "resource_sizing"
+    ],
+    "language": "en",
+    "useCase": "Avoid using `instance_type = \"m5.4xlarge\"` for low-load services; monitor usage and downsize to `t3.medium` or similar when appropriate."
+  },
+  "REQ_HARDCODED_VALUES": {
+    "description": "Terraform configuration must not contain hardcoded values (region, AMI, instance_type, subnet_id, CIDR blocks, credentials, etc.). All such parameters should be passed through variables with validation or retrieved from secure storage.",
+    "keywords": [
+      "hardcoded",
+      "variables",
+      "validation",
+      "SecurityRisk",
+      "Maintainability"
+    ],
+    "language": "en",
+    "useCase": "Instead of writing `ami = \"ami-123456\"` and `region = \"us-west-2\"` directly in resource blocks, define variables with validation and reference them using `var.ami` and `var.region`."
+  },
+    "REQ_REMOTE_STATE_AND_PARAMETRIZATION": {
+    "description": "Terraform configuration must not use local state (backend \"local\"), and should store the state remotely (e.g., S3 + DynamoDB or Terraform Cloud) for collaboration. Resource names (e.g., bucket, identifier) must not be hardcoded — they should be provided via variables or configuration files. Sensitive data must not be directly exposed in outputs without being marked as sensitive.",
+    "keywords": [
+      "local_state",
+      "remote_state",
+      "hardcoded",
+      "variables",
+      "outputs",
+      "security"
+    ],
+    "language": "en",
+    "useCase": "Use `backend \"s3\" {}` for shared state and pass `bucket_name` as a variable; avoid hardcoded `output \"password\" { value = var.db_password }` — mark it as `sensitive = true`."
+  },
+  "REQ_FRAGILE_DEPENDENCIES": {
+    "description": "Terraform configuration must not contain unnecessary or fragile dependencies between resources. Use built-in implicit references where possible, and use explicit depends_on only when strictly necessary to enforce creation order. Avoid excessive depends_on, artificial delays (e.g., sleep), hidden timing dependencies, and circular references to ensure stability during planning and apply.",
+    "keywords": [
+      "depends_on",
+      "dependencies",
+      "implicit_dependencies",
+      "FragileDependencies",
+      "ordering",
+      "circular_dependency",
+      "stability"
+    ],
+    "language": "en",
+    "useCase": "Avoid `depends_on = [aws_security_group.sg]` if you already reference `sg.id` — Terraform will infer the dependency automatically."
+  },
+  "REQ_STATE_LOCKING": {
+    "description": "Terraform configuration must use state locking mechanisms when working with remote backends (e.g., S3 + DynamoDB or Terraform Cloud) to prevent concurrent access and corruption of the state file.",
+    "keywords": [
+      "state_locking",
+      "DynamoDB",
+      "backend",
+      "consistency",
+      "state_lock"
+    ],
+    "language": "en",
+    "useCase": "In your S3 backend configuration, add `dynamodb_table = \"tf-locks\"` to enable state locking and avoid race conditions when multiple users run `terraform apply`."
+  },
+  "REQ_LIFECYCLE_RULES": {
+    "description": "Terraform configuration must include lifecycle blocks for critical resources (e.g., prevent_destroy = true) to avoid accidental deletion and ensure infrastructure stability.",
+    "keywords": [
+      "lifecycle",
+      "prevent_destroy",
+      "Reliability",
+      "Stability",
+      "lifecycle_management",
+      "deletion_protection"
+    ],
+    "language": "en",
+    "useCase": "Add `lifecycle { prevent_destroy = true }` to `aws_rds_instance` to protect production databases from being deleted by mistake."
+  },
+  "REQ_UNPINNED_VERSIONS": {
+    "description": "Terraform configuration must use exact version pinning for providers, modules, and Terraform itself (e.g., version = \"= 3.1.0\"), and must avoid floating ranges (~> 3.0 or >= 1.0) to prevent unpredictable changes and version drift during updates.",
+    "keywords": [
+      "version_pinning",
+      "UnpinnedVersions",
+      "drift",
+      "version_locking",
+      "stability"
+    ],
+    "language": "en",
+    "useCase": "Use `version = \"= 4.66.0\"` in the provider block instead of `~> 4.0` to avoid automatic upgrades that might change behavior unexpectedly."
+  },
+    "REQ_HARDCODED_SECRETS": {
+    "description": "Terraform configuration must not include hardcoded secrets (access_key, secret_key, passwords, encryption keys, etc.). All sensitive data must be stored in external secret managers (e.g., Vault, KMS) or passed via secure environment variables.",
+    "keywords": [
+      "hardcoded_secrets",
+      "secrets",
+      "Vault",
+      "environment_variables",
+      "security"
+    ],
+    "language": "en",
+    "useCase": "Avoid writing `access_key = \"AKIA...\"` in provider blocks; instead, use environment variables like `AWS_ACCESS_KEY_ID` or retrieve secrets via Vault provider."
+  },
+  "REQ_PUBLICLY_ACCESSIBLE_STORAGE": {
+    "description": "Terraform configuration must not allow public access to state files or any data storage (e.g., S3 buckets) without encryption and proper access controls. All state files and user data must be stored in private, encrypted storage with correctly configured permissions.",
+    "keywords": [
+      "public_access",
+      "S3",
+      "encryption",
+      "Security",
+      "PubliclyAccessibleStorage",
+      "access_controls"
+    ],
+    "language": "en",
+    "useCase": "Do not set `acl = \"public-read\"` in `aws_s3_bucket`; instead, use `block_public_acls = true` and enable `server_side_encryption_configuration`."
+  },
+  "REQ_SENSITIVE_OUTPUTS": {
+    "description": "Output blocks must not directly expose confidential data (passwords, access keys, credentials, etc.) without setting the sensitive = true flag. Sensitive outputs must be protected and access-limited.",
+    "keywords": [
+      "sensitive_outputs",
+      "secrets",
+      "output",
+      "security",
+      "confidentiality"
+    ],
+    "language": "en",
+    "useCase": "Use `sensitive = true` in outputs like `output \"db_password\" { value = var.password, sensitive = true }` to prevent secrets from being printed in CLI or logs."
+  },
+  "REQ_UNRESTRICTED_IAM_POLICIES": {
+    "description": "Terraform configuration must not contain unrestricted IAM policies (Action = \"*\" and Resource = \"*\"). Policies should follow the principle of least privilege with clearly defined allowed actions and resources.",
+    "keywords": [
+      "IAM",
+      "least_privilege",
+      "security",
+      "UnrestrictedIAMPolicies",
+      "permissions"
+    ],
+    "language": "en",
+    "useCase": "Avoid using `\"Action\": \"*\", \"Resource\": \"*\"` in IAM policies; define precise actions like `\"Action\": [\"s3:GetObject\"]` with specific resource ARNs."
+  }
+}

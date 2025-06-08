@@ -1,0 +1,1064 @@
+{
+  "nodes": [
+    {
+      "id": "instance_ip.description",
+      "label": "description",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "instance_ip.value",
+      "label": "value",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "instance_ip",
+      "label": "instance_ip",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws.region",
+      "label": "region",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws",
+      "label": "aws",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.ami",
+      "label": "ami",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.instance_type",
+      "label": "instance_type",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.tags",
+      "label": "tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example",
+      "label": "aws_instance.example",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.region.default",
+      "label": "default",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.region",
+      "label": "var.region",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.ami_id.description",
+      "label": "description",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.ami_id.default",
+      "label": "default",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.ami_id",
+      "label": "var.ami_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.instance_type.default",
+      "label": "default",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.instance_type",
+      "label": "var.instance_type",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_block.terraform.aws.aws_instance",
+      "label": "info_block.terraform.aws.aws_instance",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_instance.example.ami",
+      "label": "info_attribute.terraform.aws_instance.example.ami",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.arn",
+      "label": "aws_instance.example.arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.associate_public_ip_address",
+      "label": "aws_instance.example.associate_public_ip_address",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.availability_zone",
+      "label": "aws_instance.example.availability_zone",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.cpu_core_count",
+      "label": "aws_instance.example.cpu_core_count",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.cpu_threads_per_core",
+      "label": "aws_instance.example.cpu_threads_per_core",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.disable_api_stop",
+      "label": "aws_instance.example.disable_api_stop",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.disable_api_termination",
+      "label": "aws_instance.example.disable_api_termination",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.ebs_optimized",
+      "label": "aws_instance.example.ebs_optimized",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.enable_primary_ipv6",
+      "label": "aws_instance.example.enable_primary_ipv6",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.get_password_data",
+      "label": "aws_instance.example.get_password_data",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.hibernation",
+      "label": "aws_instance.example.hibernation",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.host_id",
+      "label": "aws_instance.example.host_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.host_resource_group_arn",
+      "label": "aws_instance.example.host_resource_group_arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.iam_instance_profile",
+      "label": "aws_instance.example.iam_instance_profile",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.id",
+      "label": "aws_instance.example.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.instance_initiated_shutdown_behavior",
+      "label": "aws_instance.example.instance_initiated_shutdown_behavior",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.instance_lifecycle",
+      "label": "aws_instance.example.instance_lifecycle",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.instance_state",
+      "label": "aws_instance.example.instance_state",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_instance.example.instance_type",
+      "label": "info_attribute.terraform.aws_instance.example.instance_type",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.ipv6_address_count",
+      "label": "aws_instance.example.ipv6_address_count",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.ipv6_addresses",
+      "label": "aws_instance.example.ipv6_addresses",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.key_name",
+      "label": "aws_instance.example.key_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.monitoring",
+      "label": "aws_instance.example.monitoring",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.outpost_arn",
+      "label": "aws_instance.example.outpost_arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.password_data",
+      "label": "aws_instance.example.password_data",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.placement_group",
+      "label": "aws_instance.example.placement_group",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.placement_partition_number",
+      "label": "aws_instance.example.placement_partition_number",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.primary_network_interface_id",
+      "label": "aws_instance.example.primary_network_interface_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.private_dns",
+      "label": "aws_instance.example.private_dns",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.private_ip",
+      "label": "aws_instance.example.private_ip",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.public_dns",
+      "label": "aws_instance.example.public_dns",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.public_ip",
+      "label": "aws_instance.example.public_ip",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.secondary_private_ips",
+      "label": "aws_instance.example.secondary_private_ips",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.security_groups",
+      "label": "aws_instance.example.security_groups",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.source_dest_check",
+      "label": "aws_instance.example.source_dest_check",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.spot_instance_request_id",
+      "label": "aws_instance.example.spot_instance_request_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.subnet_id",
+      "label": "aws_instance.example.subnet_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_instance.example.tags",
+      "label": "info_attribute.terraform.aws_instance.example.tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.tags_all",
+      "label": "aws_instance.example.tags_all",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.tenancy",
+      "label": "aws_instance.example.tenancy",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.user_data",
+      "label": "aws_instance.example.user_data",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.user_data_base64",
+      "label": "aws_instance.example.user_data_base64",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.user_data_replace_on_change",
+      "label": "aws_instance.example.user_data_replace_on_change",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.volume_tags",
+      "label": "aws_instance.example.volume_tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_instance.example.vpc_security_group_ids",
+      "label": "aws_instance.example.vpc_security_group_ids",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
+      "label": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_03",
+      "label": "info_business.REQ_03",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_25",
+      "label": "info_business.REQ_25",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_11",
+      "label": "info_business.REQ_11",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_02",
+      "label": "info_business.REQ_02",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_HARDCODED_VALUES",
+      "label": "info_business.REQ_HARDCODED_VALUES",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_15",
+      "label": "info_business.REQ_15",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_13",
+      "label": "info_business.REQ_13",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_06",
+      "label": "info_business.REQ_06",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_14",
+      "label": "info_business.REQ_14",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_REMOTE_STATE_AND_PARAMETRIZATION",
+      "label": "info_business.REQ_REMOTE_STATE_AND_PARAMETRIZATION",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_26",
+      "label": "info_business.REQ_26",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_09",
+      "label": "info_business.REQ_09",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_12",
+      "label": "info_business.REQ_12",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_27",
+      "label": "info_business.REQ_27",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "instance_ip.description",
+      "to": "instance_ip"
+    },
+    {
+      "from": "instance_ip.value",
+      "to": "instance_ip"
+    },
+    {
+      "from": "aws.region",
+      "to": "aws"
+    },
+    {
+      "from": "aws_instance.example.ami",
+      "to": "aws_instance.example"
+    },
+    {
+      "from": "aws_instance.example.instance_type",
+      "to": "aws_instance.example"
+    },
+    {
+      "from": "aws_instance.example.tags",
+      "to": "aws_instance.example"
+    },
+    {
+      "from": "var.region.default",
+      "to": "var.region"
+    },
+    {
+      "from": "var.ami_id.description",
+      "to": "var.ami_id"
+    },
+    {
+      "from": "var.ami_id.default",
+      "to": "var.ami_id"
+    },
+    {
+      "from": "var.instance_type.default",
+      "to": "var.instance_type"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "info_attribute.terraform.aws_instance.example.ami"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.associate_public_ip_address"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.availability_zone"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.cpu_core_count"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.cpu_threads_per_core"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.disable_api_stop"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.disable_api_termination"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.ebs_optimized"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.enable_primary_ipv6"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.get_password_data"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.hibernation"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.host_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.host_resource_group_arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.iam_instance_profile"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.instance_initiated_shutdown_behavior"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.instance_lifecycle"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.instance_state"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "info_attribute.terraform.aws_instance.example.instance_type"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.ipv6_address_count"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.ipv6_addresses"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.key_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.monitoring"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.outpost_arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.password_data"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.placement_group"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.placement_partition_number"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.primary_network_interface_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.private_dns"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.private_ip"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.public_dns"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.public_ip"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.secondary_private_ips"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.security_groups"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.source_dest_check"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.spot_instance_request_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.subnet_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "info_attribute.terraform.aws_instance.example.tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.tags_all"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.tenancy"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.user_data"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.user_data_base64"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.user_data_replace_on_change"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.volume_tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_instance",
+      "to": "aws_instance.example.vpc_security_group_ids"
+    },
+    {
+      "from": "info_attribute.terraform.aws_instance.example.ami",
+      "to": "aws_instance.example.ami"
+    },
+    {
+      "from": "info_attribute.terraform.aws_instance.example.instance_type",
+      "to": "aws_instance.example.instance_type"
+    },
+    {
+      "from": "info_attribute.terraform.aws_instance.example.tags",
+      "to": "aws_instance.example.tags"
+    },
+    {
+      "from": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
+      "to": "instance_ip"
+    },
+    {
+      "from": "info_business.REQ_03",
+      "to": "instance_ip"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "instance_ip"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "var.ami_id"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "instance_ip"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "aws_instance.example"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "var.ami_id"
+    },
+    {
+      "from": "info_business.REQ_02",
+      "to": "instance_ip"
+    },
+    {
+      "from": "info_business.REQ_HARDCODED_VALUES",
+      "to": "instance_ip"
+    },
+    {
+      "from": "info_business.REQ_HARDCODED_VALUES",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_HARDCODED_VALUES",
+      "to": "aws_instance.example"
+    },
+    {
+      "from": "info_business.REQ_HARDCODED_VALUES",
+      "to": "var.region"
+    },
+    {
+      "from": "info_business.REQ_15",
+      "to": "instance_ip"
+    },
+    {
+      "from": "info_business.REQ_15",
+      "to": "var.ami_id"
+    },
+    {
+      "from": "info_business.REQ_13",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_13",
+      "to": "aws_instance.example"
+    },
+    {
+      "from": "info_business.REQ_06",
+      "to": "aws_instance.example"
+    },
+    {
+      "from": "info_business.REQ_14",
+      "to": "var.region"
+    },
+    {
+      "from": "info_business.REQ_REMOTE_STATE_AND_PARAMETRIZATION",
+      "to": "var.region"
+    },
+    {
+      "from": "info_business.REQ_26",
+      "to": "var.ami_id"
+    },
+    {
+      "from": "info_business.REQ_09",
+      "to": "var.instance_type"
+    },
+    {
+      "from": "info_business.REQ_12",
+      "to": "var.instance_type"
+    },
+    {
+      "from": "info_business.REQ_27",
+      "to": "var.instance_type"
+    },
+    {
+      "from": "aws_instance.example.public_ip",
+      "to": "instance_ip.value"
+    },
+    {
+      "from": "var.region",
+      "to": "aws.region"
+    },
+    {
+      "from": "var.ami_id",
+      "to": "aws_instance.example.ami"
+    },
+    {
+      "from": "var.instance_type",
+      "to": "aws_instance.example.instance_type"
+    }
+  ]
+}

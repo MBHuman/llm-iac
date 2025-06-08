@@ -1,0 +1,12 @@
+{
+  "s3_lifecycle_production": {
+    "description": "In a production environment, logs must be deleted after 30 days",
+    "keywords": ["production", "expiration", "lifecycle", "s3", "logs"],
+    "language": "en"
+  },
+  "s3_lifecycle_non_production": {
+    "description": "In non-production environments, logs may be retained for only 7 days",
+    "keywords": ["non-production", "expiration", "lifecycle", "s3", "logs"],
+    "language": "en"
+  }
+}

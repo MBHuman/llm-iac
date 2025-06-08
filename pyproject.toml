@@ -1,0 +1,51 @@
+[project]
+name = "llm_graph_logic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.11.18",
+    "black>=25.1.0",
+    "cryptography>=45.0.3",
+    "diskcache2>=1.0.0",
+    "dotenv>=0.9.9",
+    "fastapi>=0.115.12",
+    "httpx>=0.28.1",
+    "instructor>=1.7.9",
+    "jose>=1.0.0",
+    "jsonschema>=4.23.0",
+    "langdetect>=1.0.9",
+    "matplotlib>=3.10.3",
+    "openai>=1.76.0",
+    "pyjwt>=2.10.1",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=1.0.0",
+    "python-hcl2>=7.1.0",
+    "scikit-learn>=1.6.1",
+    "sentence-transformers>=4.1.0",
+    "torch>=2.7.0",
+    "torch-geometric>=2.6.1",
+    "uvicorn>=0.34.2",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = [
+    "venv",           # виртуальное окружение
+    "build",          # директория сборки
+    "dist",           # артефакты
+    "tests", # пример: игнорировать фикстуры
+    "scripts/legacy", # произвольная нестандартизованная папка
+]
+
+# Включаем основные правила
+select = ["E", "F", "B", "I", "N", "UP"]
+ignore = ["E501", "N806", "N802", "N803", "N815"]  # не проверять длину строки
+
+# Автоматическое исправление ошибок
+fixable = ["ALL"]

@@ -1,0 +1,728 @@
+{
+  "nodes": [
+    {
+      "id": "aws.region",
+      "label": "region",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws",
+      "label": "aws",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.terraform_state.bucket",
+      "label": "bucket",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.terraform_state",
+      "label": "aws_s3_bucket.terraform_state",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_public_access_block.state_public.bucket",
+      "label": "bucket",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_public_access_block.state_public.block_public_acls",
+      "label": "block_public_acls",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_public_access_block.state_public.block_public_policy",
+      "label": "block_public_policy",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_public_access_block.state_public.ignore_public_acls",
+      "label": "ignore_public_acls",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_public_access_block.state_public.restrict_public_buckets",
+      "label": "restrict_public_buckets",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_public_access_block.state_public",
+      "label": "aws_s3_bucket_public_access_block.state_public",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_policy.state_public_policy.bucket",
+      "label": "bucket",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_policy.state_public_policy.policy",
+      "label": "policy",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_policy.state_public_policy",
+      "label": "aws_s3_bucket_policy.state_public_policy",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.customer_data.bucket",
+      "label": "bucket",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.customer_data.acl",
+      "label": "acl",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.customer_data",
+      "label": "aws_s3_bucket.customer_data",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_policy.customer_data_public.bucket",
+      "label": "bucket",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_policy.customer_data_public.policy",
+      "label": "policy",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_policy.customer_data_public",
+      "label": "aws_s3_bucket_policy.customer_data_public",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.customer_db.allocated_storage",
+      "label": "allocated_storage",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.customer_db.engine_version",
+      "label": "engine_version",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.customer_db.instance_class",
+      "label": "instance_class",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.customer_db.password",
+      "label": "password",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.customer_db.username",
+      "label": "username",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_db_instance.customer_db",
+      "label": "aws_db_instance.customer_db",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "db_password.value",
+      "label": "value",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "db_password",
+      "label": "db_password",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "state_bucket_url.value",
+      "label": "value",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "state_bucket_url",
+      "label": "state_bucket_url",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "customer_bucket_url.value",
+      "label": "value",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "customer_bucket_url",
+      "label": "customer_bucket_url",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_11",
+      "label": "info_business.REQ_11",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_26",
+      "label": "info_business.REQ_26",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_25",
+      "label": "info_business.REQ_25",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
+      "label": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_03",
+      "label": "info_business.REQ_03",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_28",
+      "label": "info_business.REQ_28",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_REMOTE_STATE_AND_PARAMETRIZATION",
+      "label": "info_business.REQ_REMOTE_STATE_AND_PARAMETRIZATION",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_27",
+      "label": "info_business.REQ_27",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_UNRESTRICTED_IAM_POLICIES",
+      "label": "info_business.REQ_UNRESTRICTED_IAM_POLICIES",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_02",
+      "label": "info_business.REQ_02",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_06",
+      "label": "info_business.REQ_06",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_SENSITIVE_OUTPUTS",
+      "label": "info_business.REQ_SENSITIVE_OUTPUTS",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_24",
+      "label": "info_business.REQ_24",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_UNPINNED_VERSIONS",
+      "label": "info_business.REQ_UNPINNED_VERSIONS",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_08",
+      "label": "info_business.REQ_08",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_09",
+      "label": "info_business.REQ_09",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_04",
+      "label": "info_business.REQ_04",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_07",
+      "label": "info_business.REQ_07",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_STATE_LOCKING",
+      "label": "info_business.REQ_STATE_LOCKING",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "aws.region",
+      "to": "aws"
+    },
+    {
+      "from": "aws_s3_bucket.terraform_state.bucket",
+      "to": "aws_s3_bucket.terraform_state"
+    },
+    {
+      "from": "aws_s3_bucket_public_access_block.state_public.bucket",
+      "to": "aws_s3_bucket_public_access_block.state_public"
+    },
+    {
+      "from": "aws_s3_bucket_public_access_block.state_public.block_public_acls",
+      "to": "aws_s3_bucket_public_access_block.state_public"
+    },
+    {
+      "from": "aws_s3_bucket_public_access_block.state_public.block_public_policy",
+      "to": "aws_s3_bucket_public_access_block.state_public"
+    },
+    {
+      "from": "aws_s3_bucket_public_access_block.state_public.ignore_public_acls",
+      "to": "aws_s3_bucket_public_access_block.state_public"
+    },
+    {
+      "from": "aws_s3_bucket_public_access_block.state_public.restrict_public_buckets",
+      "to": "aws_s3_bucket_public_access_block.state_public"
+    },
+    {
+      "from": "aws_s3_bucket_policy.state_public_policy.bucket",
+      "to": "aws_s3_bucket_policy.state_public_policy"
+    },
+    {
+      "from": "aws_s3_bucket_policy.state_public_policy.policy",
+      "to": "aws_s3_bucket_policy.state_public_policy"
+    },
+    {
+      "from": "aws_s3_bucket.customer_data.bucket",
+      "to": "aws_s3_bucket.customer_data"
+    },
+    {
+      "from": "aws_s3_bucket.customer_data.acl",
+      "to": "aws_s3_bucket.customer_data"
+    },
+    {
+      "from": "aws_s3_bucket_policy.customer_data_public.bucket",
+      "to": "aws_s3_bucket_policy.customer_data_public"
+    },
+    {
+      "from": "aws_s3_bucket_policy.customer_data_public.policy",
+      "to": "aws_s3_bucket_policy.customer_data_public"
+    },
+    {
+      "from": "aws_db_instance.customer_db.allocated_storage",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "aws_db_instance.customer_db.engine_version",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "aws_db_instance.customer_db.instance_class",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "aws_db_instance.customer_db.password",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "aws_db_instance.customer_db.password",
+      "to": "db_password.value"
+    },
+    {
+      "from": "aws_db_instance.customer_db.username",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "db_password.value",
+      "to": "db_password"
+    },
+    {
+      "from": "state_bucket_url.value",
+      "to": "state_bucket_url"
+    },
+    {
+      "from": "customer_bucket_url.value",
+      "to": "customer_bucket_url"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "aws_s3_bucket.customer_data"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "aws_s3_bucket_policy.customer_data_public"
+    },
+    {
+      "from": "info_business.REQ_26",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_26",
+      "to": "aws_s3_bucket_public_access_block.state_public"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "aws_s3_bucket_public_access_block.state_public"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "aws_s3_bucket_policy.state_public_policy"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "aws_s3_bucket_policy.customer_data_public"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "db_password"
+    },
+    {
+      "from": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
+      "to": "aws_s3_bucket.terraform_state"
+    },
+    {
+      "from": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
+      "to": "aws_s3_bucket_public_access_block.state_public"
+    },
+    {
+      "from": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
+      "to": "aws_s3_bucket.customer_data"
+    },
+    {
+      "from": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
+      "to": "state_bucket_url"
+    },
+    {
+      "from": "info_business.REQ_03",
+      "to": "aws_s3_bucket.terraform_state"
+    },
+    {
+      "from": "info_business.REQ_03",
+      "to": "aws_s3_bucket.customer_data"
+    },
+    {
+      "from": "info_business.REQ_03",
+      "to": "state_bucket_url"
+    },
+    {
+      "from": "info_business.REQ_03",
+      "to": "customer_bucket_url"
+    },
+    {
+      "from": "info_business.REQ_28",
+      "to": "aws_s3_bucket.terraform_state"
+    },
+    {
+      "from": "info_business.REQ_28",
+      "to": "aws_s3_bucket_public_access_block.state_public"
+    },
+    {
+      "from": "info_business.REQ_28",
+      "to": "aws_s3_bucket_policy.state_public_policy"
+    },
+    {
+      "from": "info_business.REQ_REMOTE_STATE_AND_PARAMETRIZATION",
+      "to": "aws_s3_bucket.terraform_state"
+    },
+    {
+      "from": "info_business.REQ_REMOTE_STATE_AND_PARAMETRIZATION",
+      "to": "state_bucket_url"
+    },
+    {
+      "from": "info_business.REQ_27",
+      "to": "aws_s3_bucket_public_access_block.state_public"
+    },
+    {
+      "from": "info_business.REQ_27",
+      "to": "aws_s3_bucket_policy.state_public_policy"
+    },
+    {
+      "from": "info_business.REQ_27",
+      "to": "aws_s3_bucket_policy.customer_data_public"
+    },
+    {
+      "from": "info_business.REQ_27",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "info_business.REQ_UNRESTRICTED_IAM_POLICIES",
+      "to": "aws_s3_bucket_policy.state_public_policy"
+    },
+    {
+      "from": "info_business.REQ_UNRESTRICTED_IAM_POLICIES",
+      "to": "aws_s3_bucket_policy.customer_data_public"
+    },
+    {
+      "from": "info_business.REQ_02",
+      "to": "aws_s3_bucket_policy.state_public_policy"
+    },
+    {
+      "from": "info_business.REQ_02",
+      "to": "aws_s3_bucket_policy.customer_data_public"
+    },
+    {
+      "from": "info_business.REQ_02",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "info_business.REQ_06",
+      "to": "aws_s3_bucket_policy.state_public_policy"
+    },
+    {
+      "from": "info_business.REQ_06",
+      "to": "aws_s3_bucket_policy.customer_data_public"
+    },
+    {
+      "from": "info_business.REQ_SENSITIVE_OUTPUTS",
+      "to": "aws_s3_bucket.customer_data"
+    },
+    {
+      "from": "info_business.REQ_SENSITIVE_OUTPUTS",
+      "to": "db_password"
+    },
+    {
+      "from": "info_business.REQ_24",
+      "to": "aws_s3_bucket.customer_data"
+    },
+    {
+      "from": "info_business.REQ_24",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "info_business.REQ_24",
+      "to": "db_password"
+    },
+    {
+      "from": "info_business.REQ_UNPINNED_VERSIONS",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "info_business.REQ_08",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "info_business.REQ_09",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "info_business.REQ_04",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "info_business.REQ_04",
+      "to": "db_password"
+    },
+    {
+      "from": "info_business.REQ_07",
+      "to": "aws_db_instance.customer_db"
+    },
+    {
+      "from": "info_business.REQ_STATE_LOCKING",
+      "to": "state_bucket_url"
+    }
+  ]
+}

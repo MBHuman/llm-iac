@@ -1,0 +1,901 @@
+{
+  "nodes": [
+    {
+      "id": "bucket_name.description",
+      "label": "description",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "bucket_name.value",
+      "label": "value",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "bucket_name",
+      "label": "bucket_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.region.description",
+      "label": "description",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.region.type",
+      "label": "type",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.region.default",
+      "label": "default",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.region",
+      "label": "var.region",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.environment.description",
+      "label": "description",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.environment.type",
+      "label": "type",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.environment.default",
+      "label": "default",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "var.environment",
+      "label": "var.environment",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws.region",
+      "label": "region",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws",
+      "label": "aws",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.bucket",
+      "label": "bucket",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.acl",
+      "label": "acl",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data",
+      "label": "aws_s3_bucket.app_data",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_lifecycle_configuration.cleanup.bucket",
+      "label": "bucket",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_lifecycle_configuration.cleanup.rule",
+      "label": "rule",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_lifecycle_configuration.cleanup",
+      "label": "aws_s3_bucket_lifecycle_configuration.cleanup",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_block.terraform.aws.aws_s3_bucket",
+      "label": "info_block.terraform.aws.aws_s3_bucket",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.acceleration_status",
+      "label": "aws_s3_bucket.app_data.acceleration_status",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_s3_bucket.app_data.acl",
+      "label": "info_attribute.terraform.aws_s3_bucket.app_data.acl",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.arn",
+      "label": "aws_s3_bucket.app_data.arn",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_s3_bucket.app_data.bucket",
+      "label": "info_attribute.terraform.aws_s3_bucket.app_data.bucket",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.bucket_domain_name",
+      "label": "aws_s3_bucket.app_data.bucket_domain_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.bucket_prefix",
+      "label": "aws_s3_bucket.app_data.bucket_prefix",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.bucket_regional_domain_name",
+      "label": "aws_s3_bucket.app_data.bucket_regional_domain_name",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.force_destroy",
+      "label": "aws_s3_bucket.app_data.force_destroy",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.hosted_zone_id",
+      "label": "aws_s3_bucket.app_data.hosted_zone_id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.id",
+      "label": "aws_s3_bucket.app_data.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.object_lock_enabled",
+      "label": "aws_s3_bucket.app_data.object_lock_enabled",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.policy",
+      "label": "aws_s3_bucket.app_data.policy",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.region",
+      "label": "aws_s3_bucket.app_data.region",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.request_payer",
+      "label": "aws_s3_bucket.app_data.request_payer",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.tags",
+      "label": "aws_s3_bucket.app_data.tags",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.tags_all",
+      "label": "aws_s3_bucket.app_data.tags_all",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.website_domain",
+      "label": "aws_s3_bucket.app_data.website_domain",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket.app_data.website_endpoint",
+      "label": "aws_s3_bucket.app_data.website_endpoint",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_block.terraform.aws.aws_s3_bucket_lifecycle_configuration",
+      "label": "info_block.terraform.aws.aws_s3_bucket_lifecycle_configuration",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_attribute.terraform.aws_s3_bucket_lifecycle_configuration.cleanup.bucket",
+      "label": "info_attribute.terraform.aws_s3_bucket_lifecycle_configuration.cleanup.bucket",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_lifecycle_configuration.cleanup.expected_bucket_owner",
+      "label": "aws_s3_bucket_lifecycle_configuration.cleanup.expected_bucket_owner",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_lifecycle_configuration.cleanup.id",
+      "label": "aws_s3_bucket_lifecycle_configuration.cleanup.id",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "aws_s3_bucket_lifecycle_configuration.cleanup.transition_default_minimum_object_size",
+      "label": "aws_s3_bucket_lifecycle_configuration.cleanup.transition_default_minimum_object_size",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_27",
+      "label": "info_business.REQ_27",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_03",
+      "label": "info_business.REQ_03",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_24",
+      "label": "info_business.REQ_24",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_11",
+      "label": "info_business.REQ_11",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_25",
+      "label": "info_business.REQ_25",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_13",
+      "label": "info_business.REQ_13",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_19",
+      "label": "info_business.REQ_19",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_26",
+      "label": "info_business.REQ_26",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_HARDCODED_VALUES",
+      "label": "info_business.REQ_HARDCODED_VALUES",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_16",
+      "label": "info_business.REQ_16",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_18",
+      "label": "info_business.REQ_18",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_15",
+      "label": "info_business.REQ_15",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_12",
+      "label": "info_business.REQ_12",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
+      "label": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_HARDCODED_SECRETS",
+      "label": "info_business.REQ_HARDCODED_SECRETS",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_02",
+      "label": "info_business.REQ_02",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_07",
+      "label": "info_business.REQ_07",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_10",
+      "label": "info_business.REQ_10",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_LIFECYCLE_RULES",
+      "label": "info_business.REQ_LIFECYCLE_RULES",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_22",
+      "label": "info_business.REQ_22",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "bucket_name.description",
+      "to": "bucket_name"
+    },
+    {
+      "from": "bucket_name.value",
+      "to": "bucket_name"
+    },
+    {
+      "from": "var.region.description",
+      "to": "var.region"
+    },
+    {
+      "from": "var.region.type",
+      "to": "var.region"
+    },
+    {
+      "from": "var.region.default",
+      "to": "var.region"
+    },
+    {
+      "from": "var.environment.description",
+      "to": "var.environment"
+    },
+    {
+      "from": "var.environment.type",
+      "to": "var.environment"
+    },
+    {
+      "from": "var.environment.default",
+      "to": "var.environment"
+    },
+    {
+      "from": "aws.region",
+      "to": "aws"
+    },
+    {
+      "from": "aws_s3_bucket.app_data.bucket",
+      "to": "aws_s3_bucket.app_data"
+    },
+    {
+      "from": "aws_s3_bucket.app_data.bucket",
+      "to": "bucket_name.value"
+    },
+    {
+      "from": "aws_s3_bucket.app_data.acl",
+      "to": "aws_s3_bucket.app_data"
+    },
+    {
+      "from": "aws_s3_bucket_lifecycle_configuration.cleanup.bucket",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup"
+    },
+    {
+      "from": "aws_s3_bucket_lifecycle_configuration.cleanup.rule",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.acceleration_status"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "info_attribute.terraform.aws_s3_bucket.app_data.acl"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.arn"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "info_attribute.terraform.aws_s3_bucket.app_data.bucket"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.bucket_domain_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.bucket_prefix"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.bucket_regional_domain_name"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.force_destroy"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.hosted_zone_id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.object_lock_enabled"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.policy"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.region"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.request_payer"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.tags"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.tags_all"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.website_domain"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket",
+      "to": "aws_s3_bucket.app_data.website_endpoint"
+    },
+    {
+      "from": "info_attribute.terraform.aws_s3_bucket.app_data.acl",
+      "to": "aws_s3_bucket.app_data.acl"
+    },
+    {
+      "from": "info_attribute.terraform.aws_s3_bucket.app_data.bucket",
+      "to": "aws_s3_bucket.app_data.bucket"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket_lifecycle_configuration",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket_lifecycle_configuration",
+      "to": "info_attribute.terraform.aws_s3_bucket_lifecycle_configuration.cleanup.bucket"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket_lifecycle_configuration",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup.expected_bucket_owner"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket_lifecycle_configuration",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup.id"
+    },
+    {
+      "from": "info_block.terraform.aws.aws_s3_bucket_lifecycle_configuration",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup.transition_default_minimum_object_size"
+    },
+    {
+      "from": "info_attribute.terraform.aws_s3_bucket_lifecycle_configuration.cleanup.bucket",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup.bucket"
+    },
+    {
+      "from": "info_business.REQ_27",
+      "to": "bucket_name"
+    },
+    {
+      "from": "info_business.REQ_27",
+      "to": "aws_s3_bucket.app_data"
+    },
+    {
+      "from": "info_business.REQ_27",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup"
+    },
+    {
+      "from": "info_business.REQ_03",
+      "to": "bucket_name"
+    },
+    {
+      "from": "info_business.REQ_03",
+      "to": "aws_s3_bucket.app_data"
+    },
+    {
+      "from": "info_business.REQ_24",
+      "to": "bucket_name"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "bucket_name"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "var.region"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "bucket_name"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup"
+    },
+    {
+      "from": "info_business.REQ_13",
+      "to": "bucket_name"
+    },
+    {
+      "from": "info_business.REQ_13",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_19",
+      "to": "var.region"
+    },
+    {
+      "from": "info_business.REQ_19",
+      "to": "var.environment"
+    },
+    {
+      "from": "info_business.REQ_26",
+      "to": "var.region"
+    },
+    {
+      "from": "info_business.REQ_HARDCODED_VALUES",
+      "to": "var.region"
+    },
+    {
+      "from": "info_business.REQ_HARDCODED_VALUES",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_16",
+      "to": "var.environment"
+    },
+    {
+      "from": "info_business.REQ_18",
+      "to": "var.environment"
+    },
+    {
+      "from": "info_business.REQ_18",
+      "to": "aws_s3_bucket.app_data"
+    },
+    {
+      "from": "info_business.REQ_15",
+      "to": "var.environment"
+    },
+    {
+      "from": "info_business.REQ_15",
+      "to": "aws_s3_bucket.app_data"
+    },
+    {
+      "from": "info_business.REQ_12",
+      "to": "var.environment"
+    },
+    {
+      "from": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
+      "to": "aws_s3_bucket.app_data"
+    },
+    {
+      "from": "info_business.REQ_HARDCODED_SECRETS",
+      "to": "aws_s3_bucket.app_data"
+    },
+    {
+      "from": "info_business.REQ_02",
+      "to": "aws_s3_bucket.app_data"
+    },
+    {
+      "from": "info_business.REQ_07",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup"
+    },
+    {
+      "from": "info_business.REQ_10",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup"
+    },
+    {
+      "from": "info_business.REQ_LIFECYCLE_RULES",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup"
+    },
+    {
+      "from": "info_business.REQ_22",
+      "to": "bucket_name"
+    },
+    {
+      "from": "info_business.REQ_22",
+      "to": "var.region"
+    },
+    {
+      "from": "info_business.REQ_22",
+      "to": "var.environment"
+    },
+    {
+      "from": "info_business.REQ_22",
+      "to": "aws_s3_bucket.app_data"
+    },
+    {
+      "from": "info_business.REQ_22",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup"
+    },
+    {
+      "from": "var.region",
+      "to": "aws.region"
+    },
+    {
+      "from": "var.environment",
+      "to": "aws_s3_bucket.app_data.bucket"
+    },
+    {
+      "from": "var.environment",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup.rule"
+    },
+    {
+      "from": "aws_s3_bucket.app_data.id",
+      "to": "aws_s3_bucket_lifecycle_configuration.cleanup.bucket"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+from tests.terraform.fixtures.conftest import *

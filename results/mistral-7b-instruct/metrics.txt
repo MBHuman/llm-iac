@@ -1,0 +1,29 @@
+# mistral-7b-instruct
+
+basic_example
+
+{
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1": 0.0,
+  "accuracy": 0.909
+}
+
+business_logic_example
+
+{
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1": 0.0,
+  "accuracy": 0.8611
+}
+
+
+password_example
+
+{
+  "precision": 0.2,
+  "recall": 1.0,
+  "f1": 0.333,
+  "accuracy": 0.8919
+}
