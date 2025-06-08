@@ -1,7 +1,8 @@
 {
   "REQ_22": {
-    "description": "В aws_s3_bucket_lifecycle_configuration для окружения «production» параметр expiration.days должен быть равен 30, а не 7, чтобы обеспечивалось хранение логов в соответствии с бизнес-требованием.",
-    "keywords": ["lifecycle_configuration", "expiration.days", "production", "30_дней", "бизнес-логика", "aws_s3_bucket"],
-    "language": "ru"
+    "description": "In aws_s3_bucket_lifecycle_configuration for the “production” environment, the expiration.days parameter must be set to 30 instead of 7 to ensure logs are retained in accordance with the business requirement.",
+    "useCase": "Retain production environment logs for at least 30 days to support subsequent auditing and business metrics analysis.",
+    "keywords": ["lifecycle_configuration", "expiration.days", "production", "30_days", "business_logic", "aws_s3_bucket"],
+    "language": "en"
   }
 }

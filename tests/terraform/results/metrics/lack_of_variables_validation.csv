@@ -1,0 +1,9 @@
+# Model: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+# Project: lack_of_variables_validation
+# Generated on: c:\Users\zenka\Documents\github\llm-iac\lack_of_variables_validation.csv
+
+category,project_name,model_name,metric,precision,recall,f1,jaccard
+maintainability_n_colobarations,lack_of_variables_validation,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.0000,0.0000,0.0000,0.0000
+maintainability_n_colobarations,lack_of_variables_validation,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0000,0.0000,0.0000,0.0000
+maintainability_n_colobarations,lack_of_variables_validation,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.0000,0.0000,0.0000,0.0000
+maintainability_n_colobarations,lack_of_variables_validation,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0000,0.0000,0.0000,0.0000

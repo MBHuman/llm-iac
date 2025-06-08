@@ -1,0 +1,9 @@
+# Model: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+# Project: no_lifecycle_rules
+# Generated on: c:\Users\zenka\Documents\github\llm-iac\no_lifecycle_rules.csv
+
+category,project_name,model_name,metric,precision,recall,f1,jaccard
+reliability_n_stability,no_lifecycle_rules,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.0000,0.0000,0.0000,0.0000
+reliability_n_stability,no_lifecycle_rules,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0000,0.0000,0.0000,0.0000
+reliability_n_stability,no_lifecycle_rules,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.0000,0.0000,0.0000,0.2500
+reliability_n_stability,no_lifecycle_rules,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.2500,0.2500,0.2500,0.2500

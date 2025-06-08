@@ -1,0 +1,9 @@
+# Model: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+# Project: business_logic
+# Generated on: c:\Users\zenka\Documents\github\llm-iac\business_logic.csv
+
+category,project_name,model_name,metric,precision,recall,f1,jaccard
+basic,business_logic,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,1.0000,0.0417,0.0800,0.0417
+basic,business_logic,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0769,0.0769,0.0769,0.0769
+basic,business_logic,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.1667,0.0185,0.0333,0.1852
+basic,business_logic,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.1667,0.1667,0.1667,0.1667

@@ -1,0 +1,9 @@
+# Model: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+# Project: fragile_dependencies
+# Generated on: c:\Users\zenka\Documents\github\llm-iac\fragile_dependencies.csv
+
+category,project_name,model_name,metric,precision,recall,f1,jaccard
+reliability_n_stability,fragile_dependencies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.0000,0.0000,0.0000,0.0000
+reliability_n_stability,fragile_dependencies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0000,0.0000,0.0000,0.0000
+reliability_n_stability,fragile_dependencies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.0000,0.0000,0.0000,0.1250
+reliability_n_stability,fragile_dependencies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.1250,0.1250,0.1250,0.1250

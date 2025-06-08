@@ -1,0 +1,9 @@
+# Model: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+# Project: unrestricted_iam_policies
+# Generated on: c:\Users\zenka\Documents\github\llm-iac\unrestricted_iam_policies.csv
+
+category,project_name,model_name,metric,precision,recall,f1,jaccard
+security_risks,unrestricted_iam_policies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.0000,0.0000,0.0000,0.0000
+security_risks,unrestricted_iam_policies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0000,0.0000,0.0000,0.0000
+security_risks,unrestricted_iam_policies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.0000,0.0000,0.0000,0.0000
+security_risks,unrestricted_iam_policies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0000,0.0000,0.0000,0.0000

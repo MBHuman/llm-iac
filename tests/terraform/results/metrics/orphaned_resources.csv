@@ -1,0 +1,9 @@
+# Model: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+# Project: orphaned_resources
+# Generated on: c:\Users\zenka\Documents\github\llm-iac\orphaned_resources.csv
+
+category,project_name,model_name,metric,precision,recall,f1,jaccard
+cost_efficiency,orphaned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.0000,0.0000,0.0000,0.0000
+cost_efficiency,orphaned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0000,0.0000,0.0000,0.0000
+cost_efficiency,orphaned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.0000,0.0000,0.0000,0.0000
+cost_efficiency,orphaned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0000,0.0000,0.0000,0.0000

@@ -61,7 +61,7 @@ class FileNode(Node):
         if start < 0 or end < 0 or start > end:
             raise ValueError(f"Некорректные позиции: start={start}, end={end}")
 
-        with path.open("r", encoding="utf-8") as f:
+        with path.open("r") as f:
             f.seek(start)
             return f.read(end - start)
 
