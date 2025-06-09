@@ -59,10 +59,6 @@ class MultiAverageComparisonResult(BaseModel):
 
         with filepath.open("w", newline="", encoding="utf-8") as csvfile:
             # Комментарии: начинаются с '#' — не будут парситься как данные
-            csvfile.write(f"# Model: {model_name}\n")
-            csvfile.write(f"# Project: {project_name}\n")
-            csvfile.write(f"# Generated on: {Path.cwd() / filepath.name}\n\n")
-
             writer = csv.writer(csvfile)
             # Заголовок таблицы
             writer.writerow(["category", "project_name", "model_name", "metric", "precision", "recall", "f1", "jaccard"])
