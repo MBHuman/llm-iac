@@ -8,37 +8,21 @@ from llm_graph_logic.test_tool.comparator import Comparator, Place
 from llm_graph_logic.test_tool.tester import LLMGraphTester
 from tests.terraform.fixtures import *
 
-
-@pytest.mark.asyncio
-async def test_basic(make_project_processor):
-    testing_model = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
-    project_id = "unrestricted_iam_policies"
-    category = "security_risks"
-    project_path = f"tests/terraform/examples/bad_practices/{category}/{project_id}"
-    requirements_paths = ["tests/terraform/requirements/bad_practices.json"]
-    cache_path = f"tests/terraform/cache/bad_practices/{category}/{project_id}"
-
-    processor, requirements_list = make_project_processor(
-        project_id, project_path, requirements_paths, cache_path)
-    await processor.processProjects()
-    processor.saveGraph2VisJS(project_id, Path(
-        f"tests/terraform/graphs/bad_practices/{category}/test_{project_id}.json"))
-
-    comparator = Comparator(testing_model)
-    comparator.addPlace(
-        Place(
-            spanText="""
+classifierPlaces = [
+    Place(
+        spanText="""
 provider "aws" {
   region = "us-east-1"
 }
             """,
-            requirementsKeys=[
-                "REQ_HARDCODED_VALUES", "REQ_UNPINNED_VERSIONS", "REQ_REMOTE_STATE_AND_PARAMETRIZATION"
-            ],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
+        requirementsKeys=[
+            "REQ_HARDCODED_VALUES",
+            "REQ_UNPINNED_VERSIONS",
+            "REQ_REMOTE_STATE_AND_PARAMETRIZATION",
+        ],
+    ),
+    Place(
+        spanText="""
 resource "aws_iam_policy" "super_admin" {
   name        = "SuperAdminFullAccess"
   description = "DANGEROUS: Full admin access to all resources"
@@ -55,13 +39,12 @@ resource "aws_iam_policy" "super_admin" {
   })
 }
             """,
-            requirementsKeys=[
-                "REQ_UNRESTRICTED_IAM_POLICIES",
-            ],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
+        requirementsKeys=[
+            "REQ_UNRESTRICTED_IAM_POLICIES",
+        ],
+    ),
+    Place(
+        spanText="""
 resource "aws_iam_role" "admin_role" {
   name = "OverprivilegedAdminRole"
 
@@ -79,36 +62,27 @@ resource "aws_iam_role" "admin_role" {
   })
 }
             """,
-            requirementsKeys=[
-                "REQ_HARDCODED_VALUES", "REQ_UNRESTRICTED_IAM_POLICIES"
-            ],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
+        requirementsKeys=["REQ_HARDCODED_VALUES", "REQ_UNRESTRICTED_IAM_POLICIES"],
+    ),
+    Place(
+        spanText="""
 resource "aws_iam_role_policy_attachment" "admin_attachment" {
   role       = aws_iam_role.admin_role.name
   policy_arn = aws_iam_policy.super_admin.arn
 }
             """,
-            requirementsKeys=[
-                "REQ_HARDCODED_VALUES", "REQ_UNRESTRICTED_IAM_POLICIES"
-            ],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
+        requirementsKeys=["REQ_HARDCODED_VALUES", "REQ_UNRESTRICTED_IAM_POLICIES"],
+    ),
+    Place(
+        spanText="""
 resource "aws_s3_bucket" "data_bucket" {
   bucket = "company-sensitive-data-2023"
 }
             """,
-            requirementsKeys=[
-                "REQ_HARDCODED_VALUES"
-            ],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
+        requirementsKeys=["REQ_HARDCODED_VALUES"],
+    ),
+    Place(
+        spanText="""
 resource "aws_s3_bucket_policy" "public_read" {
   bucket = aws_s3_bucket.data_bucket.id
 
@@ -128,13 +102,10 @@ resource "aws_s3_bucket_policy" "public_read" {
   })
 }
             """,
-            requirementsKeys=[
-                "REQ_PUBLICLY_ACCESSIBLE_STORAGE"
-            ],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
+        requirementsKeys=["REQ_PUBLICLY_ACCESSIBLE_STORAGE"],
+    ),
+    Place(
+        spanText="""
 resource "aws_iam_role" "lambda_role" {
   name = "OverprivilegedLambdaRole"
 
@@ -152,58 +123,59 @@ resource "aws_iam_role" "lambda_role" {
   })
 }
             """,
-            requirementsKeys=[
-                "REQ_UNRESTRICTED_IAM_POLICIES"
-            ],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
+        requirementsKeys=["REQ_UNRESTRICTED_IAM_POLICIES"],
+    ),
+    Place(
+        spanText="""
 resource "aws_iam_role_policy_attachment" "lambda_admin" {
   role       = aws_iam_role.lambda_role.name
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"  # Using AWS managed admin policy
 }
             """,
-            requirementsKeys=[
-                "REQ_UNRESTRICTED_IAM_POLICIES"
-            ],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
+        requirementsKeys=["REQ_UNRESTRICTED_IAM_POLICIES"],
+    ),
+    Place(
+        spanText="""
 output "admin_role_arn" {
   value = aws_iam_role.admin_role.arn
 }
             """,
-            requirementsKeys=[
-            ],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
+        requirementsKeys=[],
+    ),
+    Place(
+        spanText="""
 output "lambda_role_arn" {
   value = aws_iam_role.lambda_role.arn
 }
             """,
-            requirementsKeys=[
-            ],
-        )
+        requirementsKeys=[],
+    ),
+]
+
+
+@pytest.mark.asyncio
+async def test_basic(make_project_processor, make_llm_graph_tester, global_testing_model):
+    project_id = "unrestricted_iam_policies"
+    category = "security_risks"
+    project_path = f"tests/terraform/examples/bad_practices/{category}/{project_id}"
+    requirements_paths = ["tests/terraform/requirements/bad_practices.json"]
+    cache_path = f"tests/terraform/cache/bad_practices/{category}/{project_id}"
+
+    processor, requirements_list = make_project_processor(
+        project_id, project_path, requirements_paths, cache_path
+    )
+    await processor.processProjects()
+    processor.saveGraph2VisJS(
+        project_id,
+        Path(f"tests/terraform/graphs/bad_practices/{category}/test_{project_id}.json"),
     )
 
-    llmGraphTester = (
-        LLMGraphTester()
-        .setComparator(comparator)
-        .setResultProcessor(
-            ResultProcessor().setClassifier(
-                TransformerClassifier(
-                    requirements_list=requirements_list,
-                    threshold=0.5,
-                    model_name=testing_model,
-                )
-            )
-        )
+    llmGraphTester = make_llm_graph_tester(classifierPlaces, requirements_list)
+    
+    maComparationResults = llmGraphTester.test(processor.getAnalyzerResults(project_id))
+    maComparationResults.save_to_csv(
+        Path(f"tests/terraform/results/metrics/{project_id}.csv"),
+        project_name=project_id,
+        category=category,
+        model_name=global_testing_model,
     )
-    maComparationResults = llmGraphTester.test(
-        processor.getAnalyzerResults(project_id))
-    maComparationResults.save_to_csv(Path(
-        f"tests/terraform/results/metrics/{project_id}.csv"), project_name=project_id, category=category, model_name=testing_model)

@@ -1,5 +1,5 @@
 category,project_name,model_name,metric,precision,recall,f1,jaccard
-reliability_n_stability,fragile_dependencies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.5455,0.0759,0.1333,0.0714
-reliability_n_stability,fragile_dependencies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0840,0.0494,0.0593,0.0406
-reliability_n_stability,fragile_dependencies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.4792,0.0879,0.1312,0.0752
+reliability_n_stability,fragile_dependencies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.3636,0.0755,0.1250,0.0667
+reliability_n_stability,fragile_dependencies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0427,0.0400,0.0406,0.0274
+reliability_n_stability,fragile_dependencies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.2917,0.1239,0.1349,0.0812
 reliability_n_stability,fragile_dependencies,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0000,0.0000,0.0000,0.0000

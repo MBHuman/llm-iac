@@ -1,5 +1,5 @@
 category,project_name,model_name,metric,precision,recall,f1,jaccard
-maintainability_n_colobarations,poor_state_management,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.1667,0.1429,0.1538,0.0833
+maintainability_n_colobarations,poor_state_management,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.1667,0.1250,0.1429,0.0769
 maintainability_n_colobarations,poor_state_management,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.0417,0.1250,0.0625,0.0417
 maintainability_n_colobarations,poor_state_management,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.1250,0.0625,0.0833,0.0500
 maintainability_n_colobarations,poor_state_management,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0000,0.0000,0.0000,0.0000

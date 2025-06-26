@@ -8,37 +8,22 @@ from llm_graph_logic.test_tool.comparator import Comparator, Place
 from llm_graph_logic.test_tool.tester import LLMGraphTester
 from tests.terraform.fixtures import *
 
-
-@pytest.mark.asyncio
-async def test_basic(make_project_processor):
-    testing_model = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
-    project_id = "over_provisioned_resources"
-    category = "cost_efficiency"
-    project_path = f"tests/terraform/examples/bad_practices/{category}/{project_id}"
-    requirements_paths = ["tests/terraform/requirements/bad_practices.json"]
-    cache_path = f"tests/terraform/cache/bad_practices/{category}/{project_id}"
-
-    processor, requirements_list = make_project_processor(
-        project_id, project_path, requirements_paths, cache_path)
-    await processor.processProjects()
-    processor.saveGraph2VisJS(project_id, Path(
-        f"tests/terraform/graphs/bad_practices/{category}/test_{project_id}.json"))
-
-    comparator = Comparator(testing_model)
-    comparator.addPlace(
-        Place(
-            spanText="""
+classifierPlaces = [
+    Place(
+        spanText="""
 provider "aws" {
   region = "us-east-1"
 }
             """,
-            requirementsKeys=[
-                "REQ_HARDCODED_VALUES", "REQ_UNPINNED_VERSIONS", "REQ_REMOTE_STATE_AND_PARAMETRIZATION", "REQ_14",
-            ],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
+        requirementsKeys=[
+            "REQ_HARDCODED_VALUES",
+            "REQ_UNPINNED_VERSIONS",
+            "REQ_REMOTE_STATE_AND_PARAMETRIZATION",
+            "REQ_14",
+        ],
+    ),
+    Place(
+        spanText="""
 resource "aws_instance" "overkill_web_server" {
   ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2
   instance_type = "m5.24xlarge"           # 96 vCPUs, 384GB RAM ($4.6/hr!)
@@ -58,13 +43,15 @@ resource "aws_instance" "overkill_web_server" {
   }
 }
             """,
-            requirementsKeys=[
-                "REQ_09", "REQ_HARDCODED_VALUES", "REQ_13", "REQ_23",
-            ],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
+        requirementsKeys=[
+            "REQ_09",
+            "REQ_HARDCODED_VALUES",
+            "REQ_13",
+            "REQ_23",
+        ],
+    ),
+    Place(
+        spanText="""
 resource "aws_security_group" "web" {
   name        = "allow-http"
   description = "Allow HTTP inbound traffic"
@@ -77,26 +64,34 @@ resource "aws_security_group" "web" {
   }
 }
             """,
-            requirementsKeys=[
-                "REQ_HARDCODED_VALUES"
-            ],
-        )
+        requirementsKeys=["REQ_HARDCODED_VALUES"],
+    ),
+]
+
+
+@pytest.mark.asyncio
+async def test_basic(make_project_processor, make_llm_graph_tester, global_testing_model):
+    project_id = "over_provisioned_resources"
+    category = "cost_efficiency"
+    project_path = f"tests/terraform/examples/bad_practices/{category}/{project_id}"
+    requirements_paths = ["tests/terraform/requirements/bad_practices.json"]
+    cache_path = f"tests/terraform/cache/bad_practices/{category}/{project_id}"
+
+    processor, requirements_list = make_project_processor(
+        project_id, project_path, requirements_paths, cache_path
+    )
+    await processor.processProjects()
+    processor.saveGraph2VisJS(
+        project_id,
+        Path(f"tests/terraform/graphs/bad_practices/{category}/test_{project_id}.json"),
     )
 
-    llmGraphTester = (
-        LLMGraphTester()
-        .setComparator(comparator)
-        .setResultProcessor(
-            ResultProcessor().setClassifier(
-                TransformerClassifier(
-                    requirements_list=requirements_list,
-                    threshold=0.5,
-                    model_name=testing_model,
-                )
-            )
-        )
+    llmGraphTester = make_llm_graph_tester(classifierPlaces, requirements_list)
+    
+    maComparationResults = llmGraphTester.test(processor.getAnalyzerResults(project_id))
+    maComparationResults.save_to_csv(
+        Path(f"tests/terraform/results/metrics/{project_id}.csv"),
+        project_name=project_id,
+        category=category,
+        model_name=global_testing_model,
     )
-    maComparationResults = llmGraphTester.test(
-        processor.getAnalyzerResults(project_id))
-    maComparationResults.save_to_csv(Path(
-        f"tests/terraform/results/metrics/{project_id}.csv"), project_name=project_id, category=category, model_name=testing_model)

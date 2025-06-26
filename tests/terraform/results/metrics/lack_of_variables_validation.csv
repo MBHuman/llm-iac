@@ -1,5 +1,5 @@
 category,project_name,model_name,metric,precision,recall,f1,jaccard
-maintainability_n_colobarations,lack_of_variables_validation,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.3333,0.2105,0.2581,0.1481
-maintainability_n_colobarations,lack_of_variables_validation,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.1111,0.1667,0.1296,0.1111
-maintainability_n_colobarations,lack_of_variables_validation,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.2900,0.2200,0.2267,0.1543
+maintainability_n_colobarations,lack_of_variables_validation,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.2308,0.3333,0.2727,0.1579
+maintainability_n_colobarations,lack_of_variables_validation,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.1346,0.2308,0.1590,0.1346
+maintainability_n_colobarations,lack_of_variables_validation,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.2900,0.3167,0.2244,0.1417
 maintainability_n_colobarations,lack_of_variables_validation,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0000,0.0000,0.0000,0.0000

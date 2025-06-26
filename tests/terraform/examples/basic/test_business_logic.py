@@ -8,24 +8,9 @@ from llm_graph_logic.test_tool.comparator import Comparator, Place
 from llm_graph_logic.test_tool.tester import LLMGraphTester
 from tests.terraform.fixtures import *
 
-
-@pytest.mark.asyncio
-async def test_basic(make_project_processor):
-    testing_model = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
-    project_id = "business_logic"
-    category = "basic"
-    project_path = f"tests/terraform/examples/{category}/{project_id}"
-    requirements_paths = ["tests/terraform/requirements/bad_practices.json", "tests/terraform/requirements/business.json"]
-    cache_path = f"tests/terraform/cache/{category}/{project_id}"
-
-    processor, requirements_list = make_project_processor(project_id, project_path, requirements_paths, cache_path)
-    await processor.processProjects()
-    processor.saveGraph2VisJS(project_id, Path(f"tests/terraform/graphs/{category}/test_{project_id}.json"))
-
-    comparator = Comparator(testing_model)
-    comparator.addPlace(
-        Place(
-            spanText="""
+classifierPlaces = [
+    Place(
+        spanText="""
 resource "aws_s3_bucket_lifecycle_configuration" "cleanup" {
   bucket = aws_s3_bucket.app_data.id
 
@@ -41,24 +26,43 @@ resource "aws_s3_bucket_lifecycle_configuration" "cleanup" {
   }
 }
             """,
-            requirementsKeys=[
-                "REQ_22",
-            ],
-        )
+        requirementsKeys=[
+            "REQ_22",
+        ],
+    )
+]
+
+
+@pytest.mark.asyncio
+async def test_basic(
+    make_project_processor,
+    make_llm_graph_tester,
+    global_testing_model,
+):
+    project_id = "business_logic"
+    category = "basic"
+    project_path = f"tests/terraform/examples/{category}/{project_id}"
+    requirements_paths = [
+        "tests/terraform/requirements/bad_practices.json",
+        "tests/terraform/requirements/business.json",
+    ]
+    cache_path = f"tests/terraform/cache/{category}/{project_id}"
+
+    processor, requirements_list = make_project_processor(
+        project_id, project_path, requirements_paths, cache_path
+    )
+    await processor.processProjects()
+    processor.saveGraph2VisJS(
+        project_id, Path(f"tests/terraform/graphs/{category}/test_{project_id}.json")
     )
 
-    llmGraphTester = (
-        LLMGraphTester()
-        .setComparator(comparator)
-        .setResultProcessor(
-            ResultProcessor().setClassifier(
-                TransformerClassifier(
-                    requirements_list=requirements_list,
-                    threshold=0.5,
-                    model_name=testing_model,
-                )
-            )
-        )
-    )
+
+    llmGraphTester = make_llm_graph_tester(classifierPlaces, requirements_list)
+
     maComparationResults = llmGraphTester.test(processor.getAnalyzerResults(project_id))
-    maComparationResults.save_to_csv(Path(f"tests/terraform/results/metrics/{project_id}.csv"), project_name=project_id, category=category, model_name=testing_model)
+    maComparationResults.save_to_csv(
+        Path(f"tests/terraform/results/metrics/{project_id}.csv"),
+        project_name=project_id,
+        category=category,
+        model_name=global_testing_model,
+    )

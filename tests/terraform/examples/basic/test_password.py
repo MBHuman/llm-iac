@@ -8,10 +8,54 @@ from llm_graph_logic.test_tool.comparator import Comparator, Place
 from llm_graph_logic.test_tool.tester import LLMGraphTester
 from tests.terraform.fixtures import *
 
+classifierPlaces = [
+    Place(
+        spanText="""
+    variable "db_password" {
+    description = "Database password stored in plaintext — ошибочно, без шифрования"
+    type        = string
+    default     = "P@ssw0rd123"
+    }
+            """,
+        requirementsKeys=[
+            "REQ_01",
+            "REQ_HARDCODED_SECRETS",
+            "REQ_SENSITIVE_OUTPUTS",
+        ],
+    ),
+    Place(
+        spanText="""
+    resource "aws_db_instance" "app_db" {
+    identifier        = "app-db-${var.environment}"
+    engine            = "mysql"
+    instance_class    = "db.t2.micro"
+    allocated_storage = 20
+
+    username = var.db_username
+    password = var.db_password
+
+    skip_final_snapshot = true
+    }
+            """,
+        requirementsKeys=["REQ_LIFECYCLE_RULES"],
+    ),
+    Place(
+        spanText="""
+    provider "aws" {
+    region = var.region
+    }
+            """,
+        requirementsKeys=["REQ_UNPINNED_VERSIONS"],
+    ),
+]
+
 
 @pytest.mark.asyncio
-async def test_basic(make_project_processor):
-    testing_model = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+async def test_basic(
+    make_project_processor,
+    make_llm_graph_tester,
+    global_testing_model,
+):
     project_id = "password"
     category = "basic"
     project_path = f"tests/terraform/examples/basic/{project_id}"
@@ -26,62 +70,12 @@ async def test_basic(make_project_processor):
         project_id, Path(f"tests/terraform/graphs/{category}/test_{project_id}.json")
     )
 
-    comparator = Comparator(testing_model)
-    comparator.addPlace(
-        Place(
-            spanText="""
-    variable "db_password" {
-    description = "Database password stored in plaintext — ошибочно, без шифрования"
-    type        = string
-    default     = "P@ssw0rd123"
-    }
-            """,
-            requirementsKeys=[
-                "REQ_01",
-                "REQ_HARDCODED_SECRETS",
-                "REQ_SENSITIVE_OUTPUTS",
-            ],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
-    resource "aws_db_instance" "app_db" {
-    identifier        = "app-db-${var.environment}"
-    engine            = "mysql"
-    instance_class    = "db.t2.micro"
-    allocated_storage = 20
-
-    username = var.db_username
-    password = var.db_password
-
-    skip_final_snapshot = true
-    }
-            """,
-            requirementsKeys=["REQ_LIFECYCLE_RULES"],
-        )
-    ).addPlace(
-        Place(
-            spanText="""
-    provider "aws" {
-    region = var.region
-    }
-            """,
-            requirementsKeys=["REQ_UNPINNED_VERSIONS"],
-        )
-    )
-
-    llmGraphTester = (
-        LLMGraphTester()
-        .setComparator(comparator)
-        .setResultProcessor(
-            ResultProcessor().setClassifier(
-                TransformerClassifier(
-                    requirements_list=requirements_list,
-                    threshold=0.5,
-                    model_name=testing_model,
-                )
-            )
-        )
-    )
+    llmGraphTester = make_llm_graph_tester(classifierPlaces, requirements_list)
+    
     maComparationResults = llmGraphTester.test(processor.getAnalyzerResults(project_id))
-    maComparationResults.save_to_csv(Path(f"tests/terraform/results/metrics/{project_id}.csv"), project_name=project_id, category=category, model_name=testing_model)
+    maComparationResults.save_to_csv(
+        Path(f"tests/terraform/results/metrics/{project_id}.csv"),
+        project_name=project_id,
+        category=category,
+        model_name=global_testing_model,
+    )

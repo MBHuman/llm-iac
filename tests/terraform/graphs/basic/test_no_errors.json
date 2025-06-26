@@ -1,6 +1,33 @@
 {
   "nodes": [
     {
+      "id": "instance_ip.description",
+      "label": "description",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "instance_ip.value",
+      "label": "value",
+      "shape": "ellipse",
+      "color": {
+        "background": "#FFD86E",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "instance_ip",
+      "label": "instance_ip",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
       "id": "aws.region",
       "label": "region",
       "shape": "ellipse",
@@ -48,33 +75,6 @@
     {
       "id": "aws_instance.example",
       "label": "aws_instance.example",
-      "shape": "ellipse",
-      "color": {
-        "background": "#f2d7fa",
-        "border": "#F9A602"
-      }
-    },
-    {
-      "id": "instance_ip.description",
-      "label": "description",
-      "shape": "ellipse",
-      "color": {
-        "background": "#FFD86E",
-        "border": "#F9A602"
-      }
-    },
-    {
-      "id": "instance_ip.value",
-      "label": "value",
-      "shape": "ellipse",
-      "color": {
-        "background": "#FFD86E",
-        "border": "#F9A602"
-      }
-    },
-    {
-      "id": "instance_ip",
-      "label": "instance_ip",
       "shape": "ellipse",
       "color": {
         "background": "#f2d7fa",
@@ -568,51 +568,6 @@
       }
     },
     {
-      "id": "info_business.REQ_HARDCODED_VALUES",
-      "label": "info_business.REQ_HARDCODED_VALUES",
-      "shape": "ellipse",
-      "color": {
-        "background": "#f2d7fa",
-        "border": "#F9A602"
-      }
-    },
-    {
-      "id": "info_business.REQ_13",
-      "label": "info_business.REQ_13",
-      "shape": "ellipse",
-      "color": {
-        "background": "#f2d7fa",
-        "border": "#F9A602"
-      }
-    },
-    {
-      "id": "info_business.REQ_11",
-      "label": "info_business.REQ_11",
-      "shape": "ellipse",
-      "color": {
-        "background": "#f2d7fa",
-        "border": "#F9A602"
-      }
-    },
-    {
-      "id": "info_business.REQ_25",
-      "label": "info_business.REQ_25",
-      "shape": "ellipse",
-      "color": {
-        "background": "#f2d7fa",
-        "border": "#F9A602"
-      }
-    },
-    {
-      "id": "info_business.REQ_06",
-      "label": "info_business.REQ_06",
-      "shape": "ellipse",
-      "color": {
-        "background": "#f2d7fa",
-        "border": "#F9A602"
-      }
-    },
-    {
       "id": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
       "label": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
       "shape": "ellipse",
@@ -631,6 +586,24 @@
       }
     },
     {
+      "id": "info_business.REQ_25",
+      "label": "info_business.REQ_25",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_11",
+      "label": "info_business.REQ_11",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
       "id": "info_business.REQ_02",
       "label": "info_business.REQ_02",
       "shape": "ellipse",
@@ -640,8 +613,35 @@
       }
     },
     {
+      "id": "info_business.REQ_HARDCODED_VALUES",
+      "label": "info_business.REQ_HARDCODED_VALUES",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
       "id": "info_business.REQ_15",
       "label": "info_business.REQ_15",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_13",
+      "label": "info_business.REQ_13",
+      "shape": "ellipse",
+      "color": {
+        "background": "#f2d7fa",
+        "border": "#F9A602"
+      }
+    },
+    {
+      "id": "info_business.REQ_06",
+      "label": "info_business.REQ_06",
       "shape": "ellipse",
       "color": {
         "background": "#f2d7fa",
@@ -705,6 +705,14 @@
   ],
   "edges": [
     {
+      "from": "instance_ip.description",
+      "to": "instance_ip"
+    },
+    {
+      "from": "instance_ip.value",
+      "to": "instance_ip"
+    },
+    {
       "from": "aws.region",
       "to": "aws"
     },
@@ -719,14 +727,6 @@
     {
       "from": "aws_instance.example.tags",
       "to": "aws_instance.example"
-    },
-    {
-      "from": "instance_ip.description",
-      "to": "instance_ip"
-    },
-    {
-      "from": "instance_ip.value",
-      "to": "instance_ip"
     },
     {
       "from": "var.region.default",
@@ -945,62 +945,6 @@
       "to": "aws_instance.example.tags"
     },
     {
-      "from": "info_business.REQ_HARDCODED_VALUES",
-      "to": "aws"
-    },
-    {
-      "from": "info_business.REQ_HARDCODED_VALUES",
-      "to": "aws_instance.example"
-    },
-    {
-      "from": "info_business.REQ_HARDCODED_VALUES",
-      "to": "instance_ip"
-    },
-    {
-      "from": "info_business.REQ_HARDCODED_VALUES",
-      "to": "var.region"
-    },
-    {
-      "from": "info_business.REQ_13",
-      "to": "aws"
-    },
-    {
-      "from": "info_business.REQ_13",
-      "to": "aws_instance.example"
-    },
-    {
-      "from": "info_business.REQ_11",
-      "to": "aws"
-    },
-    {
-      "from": "info_business.REQ_11",
-      "to": "aws_instance.example"
-    },
-    {
-      "from": "info_business.REQ_11",
-      "to": "instance_ip"
-    },
-    {
-      "from": "info_business.REQ_11",
-      "to": "var.ami_id"
-    },
-    {
-      "from": "info_business.REQ_25",
-      "to": "aws"
-    },
-    {
-      "from": "info_business.REQ_25",
-      "to": "instance_ip"
-    },
-    {
-      "from": "info_business.REQ_25",
-      "to": "var.ami_id"
-    },
-    {
-      "from": "info_business.REQ_06",
-      "to": "aws_instance.example"
-    },
-    {
       "from": "info_business.REQ_PUBLICLY_ACCESSIBLE_STORAGE",
       "to": "instance_ip"
     },
@@ -1009,8 +953,52 @@
       "to": "instance_ip"
     },
     {
+      "from": "info_business.REQ_25",
+      "to": "instance_ip"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_25",
+      "to": "var.ami_id"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "instance_ip"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "aws_instance.example"
+    },
+    {
+      "from": "info_business.REQ_11",
+      "to": "var.ami_id"
+    },
+    {
       "from": "info_business.REQ_02",
       "to": "instance_ip"
+    },
+    {
+      "from": "info_business.REQ_HARDCODED_VALUES",
+      "to": "instance_ip"
+    },
+    {
+      "from": "info_business.REQ_HARDCODED_VALUES",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_HARDCODED_VALUES",
+      "to": "aws_instance.example"
+    },
+    {
+      "from": "info_business.REQ_HARDCODED_VALUES",
+      "to": "var.region"
     },
     {
       "from": "info_business.REQ_15",
@@ -1019,6 +1007,18 @@
     {
       "from": "info_business.REQ_15",
       "to": "var.ami_id"
+    },
+    {
+      "from": "info_business.REQ_13",
+      "to": "aws"
+    },
+    {
+      "from": "info_business.REQ_13",
+      "to": "aws_instance.example"
+    },
+    {
+      "from": "info_business.REQ_06",
+      "to": "aws_instance.example"
     },
     {
       "from": "info_business.REQ_14",
@@ -1045,6 +1045,10 @@
       "to": "var.instance_type"
     },
     {
+      "from": "aws_instance.example.public_ip",
+      "to": "instance_ip.value"
+    },
+    {
       "from": "var.region",
       "to": "aws.region"
     },
@@ -1055,10 +1059,6 @@
     {
       "from": "var.instance_type",
       "to": "aws_instance.example.instance_type"
-    },
-    {
-      "from": "aws_instance.example.public_ip",
-      "to": "instance_ip.value"
     }
   ]
 }

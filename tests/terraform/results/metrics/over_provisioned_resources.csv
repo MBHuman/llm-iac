@@ -1,5 +1,5 @@
 category,project_name,model_name,metric,precision,recall,f1,jaccard
-cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.3333,0.2308,0.2727,0.1579
-cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.1042,0.1250,0.1125,0.1042
-cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.2500,0.1500,0.1852,0.1083
+cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,micro,0.3333,0.4286,0.3750,0.2308
+cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,macro,0.2333,0.3000,0.2500,0.2333
+cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,samples,0.2500,0.4444,0.3175,0.2222
 cost_efficiency,over_provisioned_resources,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,subset,0.0000,0.0000,0.0000,0.0000
