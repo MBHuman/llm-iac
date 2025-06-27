@@ -26,10 +26,10 @@ def make_llm_graph_tester(
 
 
 @pytest.fixture
-def make_comparator():
+def make_comparator(global_testing_model):
     def _make(
         places: list[Place],
-        testing_model="sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+        testing_model=global_testing_model,
     ) -> Comparator:
         comparator = Comparator(testing_model)
         for place in places:
@@ -40,11 +40,11 @@ def make_comparator():
 
 
 @pytest.fixture
-def make_result_processor():
+def make_result_processor(global_testing_model):
     def _make(
         requirements_list: BusinessRequirements,
         threshold=0.5,
-        model_name="sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+        model_name=global_testing_model,
     ) -> ResultProcessor:
         return ResultProcessor().setClassifier(
             TransformerClassifier(
